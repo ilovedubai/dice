@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<!--EKIBEMOBILE-NTT-LINE2-->
+<!-- include any other taglib required-->
+<html class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <!-- <script type="text/javascript">
+         var htmlTag = document.getElementsByTagName('html');
+         var loaderObj = document.createElement('div');
+         loaderObj.className = 'emirates-loader';
+         loaderObj.style.display = 'block';
+         
+          htmlTag[0].insertBefore(loaderObj,htmlTag[0].firstChild);
+         
+         </script> -->
+      <meta name="HandheldFriendly" content="True" >
+      <meta name="MobileOptimized" content="320">
+      <meta name="viewport"
+         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+      <meta name="format-detection" content="telephone=no">
+      <meta http-equiv="Cache-control" content="public">
+      <meta http-equiv="X-Frame-Options" content="sameorigin">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="apple-touch-icon-precomposed"
+         media="screen and (resolution: 163dpi)"
+         href="https://mobile.emirates.com/basic/images/apple-touch-icon.png" />
+      <link rel="apple-touch-icon-precomposed"
+         media="screen and (resolution: 132dpi)"
+         href="https://mobile.emirates.com/basic/images/apple-touch-icon.png" />
+      <link rel="apple-touch-icon-precomposed"
+         media="screen and (resolution: 326dpi)"
+         href="https://mobile.emirates.com/basic/images/apple-touch-icon.png" />
+      <!-- Adding html_style.css seperately becoz the new version of the base file doesnt get downloaded otherwise -->
+      <!--<link href="https://mobile.emirates.com/basic/css/payment/jquery-ui-1.10.3.custom.css?v=40" rel="stylesheet" type="text/css" charset="utf-8" />
+         <link href="https://mobile.emirates.com/basic/css/payment/html_style.css?v=40" rel="stylesheet" type="text/css" charset="utf-8" />
+         <link href="https://mobile.emirates.com/basic/css/payment/html_style_en_XX.css?v=40" rel="stylesheet" type="text/css" charset="utf-8" /> -->
+      <link href="https://mobile.emirates.com/basic/css/payment/payment_section_mobile.css?v=40" rel="stylesheet" type="text/css" charset="utf-8" />
+      <link href="https://mobile.emirates.com/basic/css/payment/chosen.css?v=40" rel="stylesheet" type="text/css" charset="utf-8" />
+      <!-- ***************************************************************************************8 -->	
+      <!-- Global Skyward variable for Analytics and contextual menu start by sofi -->
+      <!-- Global Skyward variable for Analytics and contextual menu end by sofi-->
+      <?xml version="1.0" encoding="utf-8" ?>
+      <!-- Canonical url -->
+      <script src='//d3c3cq33003psk.cloudfront.net/opentag-93989-1716988.js' async defer></script>
+      <title>Payment details | Manage your booking | Emirates UNITED ARAB EMIRATES</title>
+      <meta name="Title" content="Payment details | Manage your booking | Emirates UNITED ARAB EMIRATES"/>
+      <meta name="Description" content="All the tools and resources you need to make the most of your online booking and planning with Emirates airline - Emirates UNITED ARAB EMIRATES"/>
+   </head>
+   <body onload="onPaymentPageLoad('true', '','', '', 'false', 'false', '', 'US,CA,IN','','US,CA,GB,IN' ); checkFiscalCodeLength();">
+      <div class="page-loader"></div>
+      <script>
+         dataLayer = [{
+         	'pageName' : 'MAB | MAB Payment Details Page',
+         	'pageCategory' : 'MAB',// This should be same as s.channel value of Omniture
+         	
+         	'languageCode': 'EN',// Current Language selected by User from Country-Language selector page 
+         	'countryCode': 'AE',// Current Country selected by User from Country-Language selector page
+         	'visitorLoginState':'Logged Out',
+         	'platformType':'HTML 5',
+         	'serverName' : 'MOB-UK-2',
+         	'pageType':'Product Page',
+         	'pageSubSectionLevel2' : '',
+         	'countryRegion':'AE|THE MIDDLE EAST',
+         	'documentTitle' : 'Welcome to Emirates',
+         	'frequentFlyerID' : '',
+         	'personId': '', // FrequentFlyer ID for logged in users. 
+              
+              
+              
+         		
+         		
+         		'personAndGuestID': 'Without Profile',
+         		
+         		
+         	
+         	
+         	
+         	'memberTier': 'Without Profile',
+         	'memberLoginType': 'Public',
+         	
+         	
+         	
+         	
+         	
+         	
+         	
+         	'isAppInstalled': 'NO'
+         	}];
+         
+         
+         
+         
+      </script>
+      <noscript>
+         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MMBK5G" height="0" width="0" style="display:none;visibility:hidden">
+         </iframe>
+      </noscript>
+      <script>
+         (
+         	function(w,d,s,l,i){
+         		w[l]=w[l]||[];
+         		w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+         		var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+         		j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         	}
+         )(window,document,'script','dataLayer','GTM-MMBK5G');
+      </script>
+      <div class="no-scroll-hack">
+         <div class="wrapper">
+            <div class="page-loader" id="pageLoader" style="display: none;">
+               <div class="loader-content">
+                  <p class="loader-text">Loading...</p>
+                  <div class="loader-animation">
+                     <span class="loader-arrow"></span>
+                     <span class="loader-plane"></span>
+                  </div>
+                  <div class="loader-add">
+                     <strong class="loader-header">Did you know?</strong>
+                     <p>You can also book hotels and cars on Emirates.com</p>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-overlay"></div>
+            <div class="navigation-head closed">
+               <div class="top-menu">
+                  <a id="mab_PAYDTL_nav_logo" href="/ae/english/home.xhtml">
+                     <div class="brand-logo ir">
+                        Emirates
+                     </div>
+                  </a>
+                  <a id="mab_PAYDTL_nav_handlr" onclick="javascript:;" class="handler"> <span class="line"></span>
+                  <span class="line"></span> <span class="line"></span>
+                  </a>
+                  <div class="nav-log-in">
+                     <a id="mab_PAYDTL_nav_logIn" title="Log In" onclick="goToLoginURL(CONFIG.get('LOGIN'),'CONTEXTUAL_MENU')">Log in</a>
+                  </div>
+               </div>
+               <div class="navigation-body" role="navigation">
+                  <div class="navigation-content">
+                     <div class="scroll-content">
+                        <div class="grid-nav">
+                           <div class="row cf">
+                              <a id="mab_PAYDTL_nav_bokFlt" href="/ae/english/CAB/IBE/bookAFlightSearch.xhtml"  title="Book A Flight"> Book a </br>Flight
+                              </a> <a id="mab_PAYDTL_nav_fltSts" href="/ae/english/plan_book/flight_status/flightSearch.xhtml" 
+                                 title="Flight Status"> Flight </br>Status
+                              </a>
+                           </div>
+                           <div class="row cf">
+                              <a id="mab_PAYDTL_nav_olci" onclick="goToOLCILoginUrl(CONFIG.get('ONLINE_CHECKIN'));" title="Flight Check-In"> Check-in </br>Online
+                              </a> <a id="mab_PAYDTL_nav_" onclick="goToMYBLoginUrl(CONFIG.get('MYB_LOGIN'));" title="Manage Booking"> Manage a </br>Booking
+                              </a>
+                           </div>
+                           <!-- Commenting out for phase 1 -->
+                           <!-- <div class="row cf">
+                              <a id="mab_PAYDTL_nav_splOfs" onclick="javascript:;" title="Special Offers"> Special </br>Offers
+                              </a> <a id="mab_PAYDTL_nav_DisDub" onclick="javascript:;" title="Discover Dubai"> Discover </br>Dubai
+                              </a>
+                              </div> -->
+                        </div>
+                        <!-- <a id="mab_PAYDTL_nav_joinSky" onclick="javascript:;" title="Join Skywards"> Join Emirates Skywards
+                           </a> <a id="mab_PAYDTL_nav_emExp" onclick="javascript:;" title="The Emirates Experience"> The Emirates Experience -->
+                        <a id="mab_PAYDTL_nav_timtble" href="/ae/english/timetable.xhtml" title="See Timetables">Flight Timetables</a> 
+                        <a id="mab_PAYDTL_nav_langSel" onclick="setWindowLocation(CONFIG.get('FROM_LANGUAGE_SELECTION'));" title="Select Language">Select Language</a>
+                        <a id="mab_PAYDTL_nav_abtEm" onclick="goToAboutEmirates()" title="About Emirates">About Emirates</a>
+                        <a id="mab_PAYDTL_nav_CntUs"  href="/ae/english/help/offices/local_emirates_offices.xhtml" title="Contact Us">Contact Us</a>  
+                        <!--<a id="mab_PAYDTL_nav_faq" onclick="javascript:;" title="Help &amp; FAQ">Help & FAQ</a> -->
+                        <a
+                           id="mab_PAYDTL_nav_trmCond" onclick="goToTermsCondition()" title="Terms &amp; Conditions">Terms & Conditions</a>
+                        <a id="mab_PAYDTL_nav_pvcyPol" onclick="goToPrivacyPolicy('PrivacyPolicyFromHome')" title="Privacy Policy">Privacy Policy</a>
+                        <a id="mab_PAYDTL_nav_fulSite" onclick="gotoMainSite('',false);" title="View HTML Site">View Full Website</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="responsive-container top-pad-45">
+               <div class="progress-bar-holder">
+                  <ul>
+                     <li class="active red mobile-view">
+                        <span class="mobile-view">Steps</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li class="active red">
+                        <span class="mobile-view">1</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li class="active red">
+                        <span class="mobile-view">2</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li class="active red">
+                        <span class="mobile-view">3</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li class="active gray">
+                        <span class="mobile-view">4</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li class="current-state">
+                        <span class="mobile-view">5</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li>
+                        <span class="mobile-view">6</span>
+                        <i class="progress-bar-arrow"></i>
+                     </li>
+                     <li>
+                        <span class="mobile-view">7</span>
+                     </li>
+                  </ul>
+               </div>
+               <!-- Error section -->
+               <!-- Error section ends -->
+               <div class="text-content">
+                  <h2 class="sub-title">Payment</h2>
+               </div>
+               <?xml version="1.0" encoding="utf-8" ?>
+               <meta charset="utf-8">
+               <form name="fbSkyLoginForm" id="fbSkyLoginForm">
+                  <div class="blue-button custom-font no-mg">
+                     <a id="mab_PAYDTL_skylogin" onclick="goToLoginURL(CONFIG.get('LOGIN'),'BAF_PAYMENT')" title="Log in to your Emirates Skywards Account">
+                     Log in to Emirates Skywards to access your saved cards, or to save a card to your account. <i class="icon"></i>
+                     </a>
+                  </div>
+               </form>
+               <div class="payment-section cf">
+                  <div class="section-row cf">
+                     <div class="mt-24 ml-24">
+                        <p class="service-title">
+                           <strong>Total fare:
+                           PKR 134,079.00
+                           </strong>
+                        </p>
+                     </div>
+                     <div class="payment-column pt-0">
+                        <div class="payment-section-content">
+                           <!-- if more than 1 delivery option the show the heading choose Payment -->
+                           <!-- if more than 1 delivery option the show the heading choose Payment ends-->
+                           <!-- Loop through the delivery options -->
+                           <!-- Outter Accordion ETKT-->
+                           <div class="payment-accordion accordion-container">
+                              <a href="#" class="accordion-round-link payment-group-1 first-link" title="Credit or Debit Cards" data-accordion-collection=".payment-group-1" data-open-scroll="end" data-accordion="accordion-expandable" data-start-open="false">
+                              Credit or debit card
+                              </a>
+                              <div class="accordion-expandable" data-custom-radio-group>
+                                 <form name="bafLoginForm" id="bafLoginForm" action="myaccountLogin.xhtml" method="post">
+                                    <input type="hidden" id="loginPageIdentifier" name="loginPageIdentifier" value="BAF_PAYMENT" />									     	           	
+                                 </form>
+                                 <!-- Form starts here for the etkt payment option -->
+                                 <form method="post" id="paymentFormETKT" novalidate action="PaymentDetails.xhtml">
+                                    <input type="hidden" name="paymentType" value="ETKT" />
+                                    <input type="hidden" name="submitted" value="true" />
+                                    <input type="hidden" id="useSavedCard" name="savedCard" value="false" />
+                                    <input type="hidden" id="paymentMethod" name="paymentMethod" value="CC" />
+                                    <input type="hidden" id="thirdPartyEnabled" name="thirdPartyEnabled" value="false" />
+                                    <input type="hidden" name="cardBinSwitch" value="true" />
+                                    <!-- credit card surcharge ga gtm values will be used after card bin service ajax call -->			                        	                      
+                                    <div id="creditcardSurchargeValueflightRouteUSD" class="hidden">0</div>
+                                    <div id="creditcardSurchargeValueflightRoutePOSSiteCurrency" class="hidden">0.00</div>
+                                    <div id="bookedValueflightRouteUSD" class="hidden">1179.27</div>
+                                    <div id="bookedValueflightRoutePOSSitecurrency" class="hidden">4331.47</div>
+                                    <div id="revenueValueFlightRouteUSD" class="hidden">1029.76</div>
+                                    <div id="revenueValueFlightRoutePOSSiteCurrency" class="hidden">3782.30</div>
+                                    <div id="flightRoute" class="hidden">KHI-JFK-KHI</div>
+                                    <div class="cf">
+                                       <p class="mt-24 mb-24">We accept:</p>
+                                       <img alt="VISAELEC" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=VISAELEC' />
+                                       <img alt="VISA" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=VISA' />
+                                       <img alt="MAST" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=MAST' />
+                                       <img alt="DINERS" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=DINERS' />
+                                       <img alt="AMEX" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=AMEX' />
+                                    </div>
+                                    <!-- New  Card starts-->
+                                    <div class="accordion-container saved-card-accordion last-accordion">
+                                       <div data-custom-radio data-radio-accordion=".payment-form-data" data-checkbox-bound="check1" class="custom-radio-button">
+                                          <label for="nonSavedCard">
+                                          <strong>Enter credit/debit card</strong>
+                                          </label>
+                                          <input type="radio" name="nonSavedCard" value="1">
+                                       </div>
+                                       <div class="payment-form-data form-spacing">
+                                          <div class="form-section input-section">
+                                             <!-- <p> <em>*Required Information</em> </p> -->
+                                             <p> <strong>Card details:</strong> </p>
+                                             <!-- Card Type field -->
+                                             <!-- Card Name field -->
+                                             <input type="hidden" name="creditCardType" value=""/>
+                                             <input type="hidden" name="isCreditCardType"/>
+                                             <p> 
+                                                <input type="tel" data-ignore-validation="true" data-validation="required, number" 
+                                                   data-errors="required:cardNumberRequired, number:cardNumberInvalid"
+                                                   onchange="getCardInfo()"
+                                                   value="" id="cardNumber" name="cardNumber"
+                                                   data-min-length="10" data-max-length="19" placeholder='Card number' data-restrict="true" autocomplete="off">
+                                             </p>
+                                             <p id="cardNumberEdit" class="error-message"></p>
+                                             <p id="cardRuleError" class="error-message">The credit card number you've entered is incorrect. Please check and try again.</p>
+                                             <p id="cardNotValidError" class="error-message">The given card is not permitted for this itinerary. Please try another card type</p>
+                                             <p class="cf hidden VISAELEC cardDetails">
+                                                <span class="cardName">Card type</span>
+                                                <img alt="VISAELEC" class="fl-right" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=VISAELEC'>
+                                             </p>
+                                             <p class="cf hidden VISA cardDetails">
+                                                <span class="cardName">Card type</span>
+                                                <img alt="VISA" class="fl-right" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=VISA'>
+                                             </p>
+                                             <p class="cf hidden MAST cardDetails">
+                                                <span class="cardName">Card type</span>
+                                                <img alt="MAST" class="fl-right" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=MAST'>
+                                             </p>
+                                             <p class="cf hidden DINERS cardDetails">
+                                                <span class="cardName">Card type</span>
+                                                <img alt="DINERS" class="fl-right" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=DINERS'>
+                                             </p>
+                                             <p class="cf hidden AMEX cardDetails">
+                                                <span class="cardName">Card type</span>
+                                                <img alt="AMEX" class="fl-right" src='https://mobile.emirates.com/ae/english/CAB/IBE/getCardTypeImgae.xhtml?cardType=AMEX'>
+                                             </p>
+                                             <p>
+                                                <input type="tel" class="passwordText short-input secure-mask" pattern="[0-9]*" data-ignore-validation="true" data-validation="required, number"
+                                                   data-errors="required:securityCodeRequired, number:securityCodeInvalid"
+                                                   value=""
+                                                   onkeyup="maskSecurityCode($(this))" 
+                                                   data-min-length="3" data-max-length="4" id="securityCode" placeholder='Security code*' data-restrict="true" autocomplete="off">
+                                                <input type="hidden" id="securityCodesNewCard" name="securityCodes"/>
+                                                <img src="https://mobile.emirates.com/basic/img/payment/payment_section/cvc.jpg" />
+                                                <span data-body-scroll="off" data-add-class="[data-tooltip='tt-cvc-new']" data-css-class="modal-active" class="flat-question-mark" ></span>
+                                             </p>
+                                             <p class="error-message"></p>
+                                             <div data-tooltip="tt-cvc-new" data-tooltip-y-offset="25" class="tooltip-modal">
+                                                <div class="modal-header mobile-view">
+                                                   <h4 class="fl-left">
+                                                      Security code
+                                                   </h4>
+                                                   <span data-body-scroll="on" data-tooltip-close="tt-cvc-new" class="icon-gray-x fl-right"></span>
+                                                </div>
+                                                <div class="modal-arrow desktop-view"></div>
+                                                <div class="modal-content">
+                                                   The card verification code (CVC) is a three or four digit credit card security code. Since this number is not embossed on the card it cannot be printed on receipts. This prevents anyone other than the credit card bearer from using the number. <br/><br/>Visa, MasterCard and Diners Club Cards have a three digit code located on the top right hand side of the signature strip on the back of the card. <br/><br/>Emirates does not store or retain your card security code. It is only used during the process of validating your credit card. 
+                                                </div>
+                                             </div>
+                                             <p>Expiry date </p>
+                                             <div class="cf">
+                                                <div id="expDate" data-display-type="date" data-custom-datepicker data-date-order="MM yy"  data-date-format="MM yy"class="cf">
+                                                   <input type="date" placeholder=''>
+                                                   <input id="exprireMonthHidden" type="hidden" name="expMonth" />	
+                                                   <input id="exprireYearHidden" type="hidden" name="expYear" />
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="form-section cf input-section with-tooltip">
+                                             <p> <strong>Cardholder details:</strong> </p>
+                                             <p> 
+                                                <input type="text"
+                                                   value="" 
+                                                   name="cardHolderFirstName" data-ignore-validation="true" data-validation="required, text"
+                                                   data-errors="required:firstNameRequired, text:firstNameInvalid"
+                                                   data-min-length="2" data-max-length="20" placeholder='First name*' data-restrict="true" id="cardHolderFirstName" onblur="checkNameWithSkywards('cardHolderFirstName','cardHolderLastName','','',false);" autocomplete="off">
+                                                <span data-body-scroll="off" data-add-class="[data-tooltip='tt-first-name']" data-css-class="modal-active" class="flat-question-mark" ></span>
+                                             </p>
+                                             <p class="error-message"></p>
+                                             <div data-tooltip="tt-first-name" data-tooltip-y-offset="25" class="tooltip-modal">
+                                                <div class="modal-header mobile-view">
+                                                   <h4 class="fl-left">
+                                                      Can I make a booking online with my credit card if I am not travelling myself?
+                                                   </h4>
+                                                   <span data-body-scroll="on" data-tooltip-close="tt-first-name" class="icon-gray-x fl-right"></span>
+                                                </div>
+                                                <div class="modal-arrow desktop-view"></div>
+                                                <div class="modal-content">
+                                                   This will depend on the country of departure. In some countries, for security reasons, the holder of the credit card used to book a ticket or group of tickets must be one of the travellers on that itinerary or have the same family name. In some cases, you may be required to present the credit card used to pay for the tickets at the airport check-in counter prior to receiving your boarding pass.</br>On the Enter billing information page where the credit card details are entered, if the "Cardholder last name" can be typed in, you will be able to pay for the booking even if you are not travelling and do not hold the same family name as one of the travellers. If the "Cardholder last name" appears in a drop-down menu and cannot be changed from those of the travellers, you will unfortunately not be able to pay for the booking unless you are travelling or have the same family name.</br>As an alternative, you could select a different payment option where available, such as bank transfer, PayPal or simply to book online and make the payment at a local Emirates office. The options available will depend on the country of departure and how much time remains prior to your flight. Please note that the fare quoted is only valid for payment in the country of departure. Due to ticketing regulations, a different fare may apply if you wish to pay for the tickets at an Emirates office in another country, or in some cases you may not be able to pay outside the country specified at the time of booking. After three days, the booking would be cancelled automatically if tickets have not been collected and paid for. Please contact your local Emirates office to confirm.</br>Emirates Skywards members may make a redemption booking for friends and family, and pay for the applicable taxes online with their own credit cards.
+                                                </div>
+                                             </div>
+                                             <!-- Last Name Drop down/text box -->	
+                                             <p id="lastNameTextP"> 
+                                                <input type="text" 
+                                                   onblur="populateLastNameFromText();" 
+                                                   placeholder='Last name*' 
+                                                   data-ignore-validation="true" 
+                                                   data-validation="text" 
+                                                   data-min-length="2"
+                                                   value="" 
+                                                   name="lastNameText" id="lastNameText" 
+                                                   data-max-length="20" data-restrict="true"  
+                                                   data-errors="text:lastNameInvalid,required:lastNameRequired" autocomplete="off"/>
+                                                <span data-body-scroll="off" data-add-class="[data-tooltip='tt-last-name']" data-css-class="modal-active" class="flat-question-mark" ></span>
+                                             </p>
+                                             <div id="lastNameDropdownP">
+                                                <div data-custom-select class="custom-select small-height mb-32" id="lastNameDropdownDiv">
+                                                   <label for="lastNameDropdown"></label> 
+                                                   <span class="arrow"></span> 
+                                                   <select id="lastNameDropdown"  value=""  onblur="populateLastNameFromList();"
+                                                      name="lastNameDropdown" >
+                                                      <option value="KHAN">KHAN</option>
+                                                   </select>
+                                                   <span data-body-scroll="off" data-add-class="[data-tooltip='tt-last-name']" data-css-class="modal-active" class="flat-question-mark" ></span>
+                                                </div>
+                                                <input type="hidden" id="cardHolderLastName" name="cardHolderLastName" onchange="checkNameWithSkywards('cardHolderFirstName','cardHolderLastName','','',false);">
+                                             </div>
+                                             <p class="error-message mt-16"></p>
+                                             <div data-tooltip="tt-last-name" data-tooltip-y-offset="25" class="tooltip-modal">
+                                                <div class="modal-header mobile-view">
+                                                   <h4 class="fl-left">
+                                                      Can I make a booking online with my credit card if I am not travelling myself?
+                                                   </h4>
+                                                   <span data-body-scroll="on" data-tooltip-close="tt-last-name" class="icon-gray-x fl-right"></span>
+                                                </div>
+                                                <div class="modal-arrow desktop-view"></div>
+                                                <div class="modal-content">
+                                                   This will depend on the country of departure. In some countries, for security reasons, the holder of the credit card used to book a ticket or group of tickets must be one of the travellers on that itinerary or have the same family name. In some cases, you may be required to present the credit card used to pay for the tickets at the airport check-in counter prior to receiving your boarding pass.</br>On the Enter billing information page where the credit card details are entered, if the "Cardholder last name" can be typed in, you will be able to pay for the booking even if you are not travelling and do not hold the same family name as one of the travellers. If the "Cardholder last name" appears in a drop-down menu and cannot be changed from those of the travellers, you will unfortunately not be able to pay for the booking unless you are travelling or have the same family name.</br>As an alternative, you could select a different payment option where available, such as bank transfer, PayPal or simply to book online and make the payment at a local Emirates office. The options available will depend on the country of departure and how much time remains prior to your flight. Please note that the fare quoted is only valid for payment in the country of departure. Due to ticketing regulations, a different fare may apply if you wish to pay for the tickets at an Emirates office in another country, or in some cases you may not be able to pay outside the country specified at the time of booking. After three days, the booking would be cancelled automatically if tickets have not been collected and paid for. Please contact your local Emirates office to confirm.</br>Emirates Skywards members may make a redemption booking for friends and family, and pay for the applicable taxes online with their own credit cards.
+                                                </div>
+                                             </div>
+                                             <div class="form-section">
+                                                <input onkeyup="checkFiscalCodeLength();" type="tel"
+                                                   name="fiscalCode" id="fiscalCode"
+                                                   placeholder='CPF/CNPJ number*'
+                                                   value=""
+                                                   data-max-length="14" data-restrict="true"
+                                                   data-validate-expression="[0-9]" data-validate-condition="containOnly"															
+                                                   data-ignore-validation="true" data-validation="required,regExp"
+                                                   data-errors="required:fiscalCodeRequired, regExp:fiscalCodeInvalid"
+                                                   autocomplete="off"/>
+                                             </div>
+                                             <p class="error-message"></p>
+                                             <p id="fiscalCodeHint" class="fl-right small-font mb-16 last-paragraph hidden">(maximum 14 digits)</p>
+                                             <input type="text" name="companyName" id="companyName"
+                                                placeholder='Company name*'
+                                                value=""
+                                                data-max-length="40" data-restrict="true"
+                                                data-validation="required,text"
+                                                data-errors="required:companyNameRequired"
+                                                autocomplete="off">
+                                             <p id="companyNameErr" class="error-message"></p>
+                                          </div>
+                                          <div id="saveCardCheckBoxDiv" class="form-section hidden">
+                                             <div class="custom-checkbox-holder cf top-spacing" data-checkbox-show="name_card_2" data-custom-checkbox>
+                                                <div class="custom-checkbox">
+                                                   <input type="checkbox" id="saveCardCheckBox" onchange="validateSaveThisCard()"/>
+                                                   <input type="hidden" name="saveThisCard" id="saveCardHidden" value="false"/>
+                                                </div>
+                                                <label for="saveCardCheckBox"><strong>Save card details to make your next booking quicker and easier.</strong></label>
+                                                <span data-body-scroll="off" data-add-class="[data-tooltip='tt-save-card']" data-css-class="modal-active" class="flat-question-mark" ></span>
+                                             </div>
+                                             <!-- 
+                                                data-tooltip-y-offset="25" -> 25 is the height of the tooltip icon
+                                                -->
+                                             <div data-tooltip="tt-save-card" data-tooltip-y-offset="25" class="tooltip-modal">
+                                                <div class="modal-header mobile-view">
+                                                   <h4 class="fl-left">
+                                                      Is my credit card information secure?
+                                                   </h4>
+                                                   <span data-body-scroll="on" data-tooltip-close="tt-save-card" class="icon-gray-x fl-right"></span>
+                                                </div>
+                                                <div class="modal-arrow desktop-view"></div>
+                                                <div class="modal-content">
+                                                   emirates.com employs industry-standard Secure Socket Layer (SSL) technology to encrypt all personal data that is sent over the internet from your computer to the emirates.com server. All information is kept on a secure server and is protected by a firewall. As an added precaution, the firewall is monitored for security breach attempts.
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div id="saveThisCardNameDiv" data-oncheck-show="name_card_2" class="d-none form-section cf input-section">
+                                             <p class="last-paragraph"> 
+                                                <input type="text" id="saveThisCardName" name="saveThisCardName" value="" 
+                                                   data-ignore-validation="true" data-validation="text" data-min-length="2" data-max-length="50" data-restrict="true" 
+                                                   data-errors="required:saveThisCardRequired, text:saveThisCardInvalid"
+                                                   placeholder='Name this card*' /> 
+                                             </p>
+                                             <p class="error-message"></p>
+                                          </div>
+                                          <div class="form-section cf input-section">
+                                             <p> <strong> Billing address: </strong> </p>
+                                             <div data-appending-container>
+                                                <div data-autocomplete="countryCodeData"
+                                                   class="autocomplete-container mb-16"  data-search-priority="_settings">
+                                                   <input type="text"
+                                                      placeholder="Country*"
+                                                      name="country" id="country" 
+                                                      data-ignore-validation="true" data-validation="required,text"
+                                                      data-errors="required:countryRequired, text:countryInvalid"
+                                                      >
+                                                   <p class="error-message"></p>
+                                                   <input type="hidden" id="countryCode" name="countryCode"
+                                                      onchange="populateStateAjaxCall(event,CONFIG.get('CAB_BILLING_STATES'), 'US,CA,IN', 'US,CA,GB,IN');"	value="">
+                                                </div>
+                                                <p class="error-message"></p>
+                                                <!-- Address 1 field -->
+                                                <div class="cf">
+                                                   <p> 
+                                                      <input
+                                                         type="text" name="address1" value=""
+                                                         data-ignore-validation="true" data-validation="required, text" placeholder="Address*"
+                                                         data-errors="required:address1Required, text:address1Invalid"
+                                                         data-min-length="2" data-max-length="50" data-restrict="true" id="address1" autocomplete="off">
+                                                   </p>
+                                                   <p class="error-message"></p>
+                                                   <p> 
+                                                      <input
+                                                         type="text" name="address2" value=""
+                                                         data-validation="text" placeholder="Address"
+                                                         data-errors="text:address2Invalid"
+                                                         data-max-length="30" data-restrict="true" id="address2" autocomplete="off">
+                                                   </p>
+                                                   <p class="error-message"></p>
+                                                   <p> 
+                                                      <input
+                                                         type="text" name="address3" value=""
+                                                         data-validation="text" placeholder="Address"
+                                                         data-errors="text:address3Invalid"
+                                                         data-max-length="10" data-restrict="true" id="address3" autocomplete="off">
+                                                   </p>
+                                                   <p class="error-message"></p>
+                                                </div>
+                                                <p class="small-font cf">
+                                                   <a id="addAnother" href="#" class="color-red fl-right" title="Add Another"><strong>Add address line</strong></a>
+                                                </p>
+                                             </div>
+                                             <!-- State / Province -->
+                                             <div  id="stateCodeContainer" data-autocomplete="stateCodeData"  data-search-priority="_settings" class="autocomplete-container mb-16">
+                                                <input type="text"
+                                                   placeholder="Province/state*"
+                                                   name="stateName" id="stateName" 
+                                                   data-ignore-validation="true" data-validation="required,text" data-errors="required:stateRequired, text:stateInvalid"
+                                                   >
+                                                <p class="error-message"></p>
+                                                <input type="hidden" id="state" name="state"
+                                                   value="">
+                                             </div>
+                                             <p class="error-message"></p>
+                                             <p> 
+                                                <input
+                                                   type="text" name="city" value=""
+                                                   placeholder="City/town*" data-ignore-validation="true" data-validation="required, text"
+                                                   data-errors="required:cityRequired, text:cityInvalid"
+                                                   data-min-length="2" data-max-length="20" id="city" autocomplete="off">
+                                             </p>
+                                             <p class="error-message"></p>
+                                             <!-- Zipcode , need to write js logic for removing the mandatory star from place holder based on the mandatory zip code check -->
+                                             <p class="last-paragraph"> 
+                                                <input
+                                                   type="text" data-min-length="2" placeholder="Post/ZIP code" data-max-length="10" data-restrict="true" data-errors="required:zipCodeRequired, text:zipCodeInvalid" data-ignore-validation="true" data-validation="required,regExp" data-validate-expression="[a-zA-Z0-9\s]" name="zipCode" id="zipCode"
+                                                   value="" autocomplete="off">
+                                             </p>
+                                             <p class="error-message"></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- New  Card ends-->
+                                    <a class="red-button full-width" title="Select">Continue</a>
+                                 </form>
+                              </div>
+                           </div>
+                           <!-- Outter Accordion LTKT-->
+                           <!-- Outter Accordion PTKT-->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- #wrapper -->
+         <div class="footer pt-0">
+            <a id="mab_PAYDTL_footer_home" href="/ae/english/home.xhtml" class="back-home"> 
+            <span class="icon-arrow"></span> <span class="text"> Home</span>
+            </a> 
+            <p id="mab_PAYDTL_footer_EKSite" class="footer-text fs-30" onclick="gotoMainSite('',false);" title="Full HTML Site" />
+               Full website
+            </p>
+            <p class="footer-text">
+               © 2015 Emirates. All Rights Reserved.
+            </p>
+         </div>
+      </div>
+      <!-- /.no-scroll-hack -->
+   </body>
+   <script>
+      var i18nMonthNames = "January~February~March~April~May~June~July~August~September~October~November~December".split("~");
+      var i18nShortMonthNames = "Jan~Feb~Mar~Apr~May~Jun~Jul~Aug~Sep~Oct~Nov~Dec".split("~");
+      var i18nShortDayNames = "Sun~Mon~Tue~Wed~Thu~Fri~Sat".split("~");
+      var i18nCancel = "Cancel";
+      var i18nSet = "Set";
+      var i18nCal_dep ="Choose a <span class='color-departure'>departure</span> date";
+      var i18nCal_ret ="Choose a <span class='color-return'>return</span> date";
+      var i18nCal_onward ="Choose an <span class='color-onward'>onward</span> date";
+      var i18nCal_conf ="Confirm your <span class='color-departure'>departure</span> and <span class='color-return'>return</span> dates";
+      var i18nCal_flight ="Choose a date for <span class='%FLIGHT_COLOR'>flight %N</span>";
+      var i18nCal_ok ="Ok";
+      var i18nSmartBannerBtn = "View";
+      var i18nSmartBannerPriceFree = "Free";
+      var i18nSmartBannerInGooglePlay = "In Google Play";
+      var i18nSmartBannerTitle = "The Emirates App";
+      var i18nSmartBannerAuthor = "Emirates";
+      
+      var i18nSmartBannerOnAppStore = "In the App Store";
+      var i18nSmartBannerPriceFreeIOS = "Get";
+      
+      window.MainSiteURL = "http://www.emirates.com/";
+      window.stopMobi = "?stop_mobi=yes";
+      window.URLFromLocale = "ae/english";
+   </script>
+   <!-- Clear local storage to prevent caching -->
+   <!-- <script type="text/javascript"> localStorage.clear(); sessionStorage.clear();</script>  -->
+   <!--  removing the below less and smartbanner as they are not needed any more
+      <script src="https://mobile.emirates.com/basic/js/vendor/less-1.4.1.min.js"></script>
+      <script src="https://mobile.emirates.com/basic/js/vendor/smartbanner.js"></script> -->
+   <script src="https://mobile.emirates.com/basic/js/vendor/modernizr-2.6.2.min.js?v=40"></script>
+   <!--<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOX7-7RIAQrEkd1Dzii_9V-GK6tEYxKVQ&sensor=false"></script>-->
+   <!-- Removing below to clear console error -->
+   <!-- <script src="https://mobile.emirates.com/basic/js/vendor/jquery.mobile-1.3.2.min.js"></script>  -->
+   <!-- Get from CDN network  -->
+   <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+   <!-- if not get from CDN, add thru the vendor folder -->
+   <script>
+      var a ="?v=40";
+      window.jQuery|| document.write('<script src="https://mobile.emirates.com/basic/js/vendor/jquery-1.10.2.min.js'+a+'"><\/script>');
+   </script>
+   <script src="https://mobile.emirates.com/basic/js/vendor/jquery.mobile.custom.min.js?v=40"></script>
+   <!-- <script>var loader = '<div class="emirates-loader" style="display: block;"></div>';
+      $('html').prepend(loader); -->
+   </script>
+   <link rel="stylesheet"
+      href="https://mobile.emirates.com/basic/js/vendor/jquery.mobile-1.3.2.css?v=40">
+   <script type="text/javascript">
+      try {
+      	$.mobile.page.prototype.options.domCache = false;
+             $.mobile.defaultPageTransition = 'none';
+             $.mobile.ajaxEnabled = false;
+      }
+      catch(ex){}
+   </script>
+   <script src="https://mobile.emirates.com/basic/js/vendor/jquery.easing.1.3.js?v=40"></script>
+   <script src="https://mobile.emirates.com/basic/js/vendor/jquery-ui-1.10.3.js?v=40"></script>
+   <script src="https://mobile.emirates.com/basic/js/min/store.js?v=40"></script>
+   <link rel="stylesheet" href="https://mobile.emirates.com/basic/js/vendor/datepicker.css?v=40" />
+   <script src="https://mobile.emirates.com/basic/js/vendor/datepicker.widget.js?v=40"></script>
+   <script src="https://mobile.emirates.com/basic/js/payment/min/payment.scripts.min.top.js?v=40"></script> 
+   <!-- EKMobile Member scripts -->
+   <!-- <script src="https://mobile.emirates.com/basic/js/payment/core.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/plugins.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/layout.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/navigation.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/accordion.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/iscroll-lite.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/select.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/modal.js?v=40"></script>
+      
+      
+      <script src="https://mobile.emirates.com/basic/js/payment/autocomplete.js?v=40"></script>
+      
+      <script src="https://mobile.emirates.com/basic/js/payment/datepicker.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/validation.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/display.control.js?v=40"></script>
+      
+      <script src="https://mobile.emirates.com/basic/js/payment/main.js?v=40"></script> -->
+   <!-- already commented before	<script src="https://mobile.emirates.com/basic/js/payment/fareFamilies.js?v=40"></script> -->
+   <!-- END EKMobile Member scripts-->
+   <!-- Custom Scripts -->
+   <!-- <script src="https://mobile.emirates.com/basic/js/payment/config.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/constants.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/ajaxUtility.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/common.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/analytics.js?v=40"></script>
+      
+      <script src="https://mobile.emirates.com/basic/js/payment/hideAdrressbar.js?v=40"></script> -->
+   <!-- End Custom Scripts -->
+   <!-- <script src="https://mobile.emirates.com/basic/js/fonts/cufon.js"></script>
+      <script src="https://mobile.emirates.com/basic/js/fonts/Emirates_500-Emirates_700.font.js"></script> -->
+   <script>
+      window.optional = "(Optional)";
+      $(function() { $('.page-loader').remove(); });
+      		EKApp.Accordion.Do('[data-accordion]');
+   </script>
+   <script type="text/javascript">
+      var button = $("#addAnother");
+      var count = 2;
+      $('#address2, #address3').slideUp();
+      button.click(function(e) {
+          $('#address' + count).slideDown();
+          count++;
+          if(count == 4) {
+            button.slideUp();
+          }
+      e.preventDefault();
+      });
+      
+      
+   </script>
+   <script src="https://mobile.emirates.com/basic/js/payment/min/paymentDetails.js?v=40"></script> 
+   <!--
+      <script src="https://mobile.emirates.com/basic/js/payment/min/payment.scripts.min.bottom.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/hideAdrressbar.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/plugins.js?v=40"></script>
+      <script src="https://mobile.emirates.com/basic/js/payment/main.js?v=40"></script>
+      
+      
+      -->
+   <!--//FRAUD MITI -->
+   <script>
+      if($("#savedCardSelect").length > 0){
+      	EKApp.CustomSelect.init([$('#savedCardSelect'),$('#lastNameDropdownDiv')]);
+      	}else{
+      	EKApp.CustomSelect.init([$('#lastNameDropdownDiv')]);
+      	}
+   </script>
+   <script src="https://h.online-metrix.net/fp/check.js?org_id=k8vif92e&amp;session_id=emirates054350634"
+      type="text/javascript"> </script>
+   <p style="background: url(https://h.online-metrix.net/fp/clear.png?org_id=k8vif92e&amp;session_id=emirates054350634&amp;m=1)">
+   </p>
+   <img alt="" src="https://h.online-metrix.net/fp/clear.png?org_id=k8vif92e&amp;session_id=emirates054350634&amp;m=2" class="hidden" />
+   <object id="thm_fp" class="hidden" data="https://h.online-metrix.net/fp/fp.swf?org_id=k8vif92e&amp;session_id=emirates054350634"
+      height="1" type="application/x-shockwave-flash" width="1">
+      <param name="movie" value="https://h.online-metrix.net/fp/fp.swf?org_id=k8vif92e&amp;session_id=emirates054350634" />
+   </object>
+   <!-- //FRAUD MITI -->
+   <script>
+      //var miles = '';
+      
+      //$("#miles").text(commaSeparateNumber(miles));
+      
+      window.countryCodeData = {"settings":{"displayFormat":"{lbl}","searchPriority":[{"searchLabel":"lbl","searchType":"START_WITH","numberOfItems":"5","sort":"true"},{"searchLabel":"lbl","searchType":"ANY","numberOfItems":"3","sort":"true"}]},"data":[{"label":{"lbl":"Andorra"},"value":"AD"},{"label":{"lbl":"United Arab Emirates (UAE)"},"value":"AE"},{"label":{"lbl":"Afghanistan"},"value":"AF"},{"label":{"lbl":"Antigua and Barbuda"},"value":"AG"},{"label":{"lbl":"Anguilla"},"value":"AI"},{"label":{"lbl":"Albania"},"value":"AL"},{"label":{"lbl":"Armenia"},"value":"AM"},{"label":{"lbl":"Netherlands Antilles"},"value":"AN"},{"label":{"lbl":"Angola"},"value":"AO"},{"label":{"lbl":"Antarctica"},"value":"AQ"},{"label":{"lbl":"Argentina"},"value":"AR"},{"label":{"lbl":"American Samoa"},"value":"AS"},{"label":{"lbl":"Austria"},"value":"AT"},{"label":{"lbl":"Australia"},"value":"AU"},{"label":{"lbl":"Aruba"},"value":"AW"},{"label":{"lbl":"Azerbaijan"},"value":"AZ"},{"label":{"lbl":"Bosnia Herzegovina"},"value":"BA"},{"label":{"lbl":"Barbados"},"value":"BB"},{"label":{"lbl":"Bangladesh"},"value":"BD"},{"label":{"lbl":"Belgium"},"value":"BE"},{"label":{"lbl":"BF"},"value":"BF"},{"label":{"lbl":"Bulgaria"},"value":"BG"},{"label":{"lbl":"Bahrain"},"value":"BH"},{"label":{"lbl":"BI"},"value":"BI"},{"label":{"lbl":"BJ"},"value":"BJ"},{"label":{"lbl":"Bermuda"},"value":"BM"},{"label":{"lbl":"Brunei Darussalam"},"value":"BN"},{"label":{"lbl":"Bolivia"},"value":"BO"},{"label":{"lbl":"Brazil"},"value":"BR"},{"label":{"lbl":"Bahamas"},"value":"BS"},{"label":{"lbl":"Bhutan"},"value":"BT"},{"label":{"lbl":"BV"},"value":"BV"},{"label":{"lbl":"Botswana"},"value":"BW"},{"label":{"lbl":"Belarus"},"value":"BY"},{"label":{"lbl":"Belize"},"value":"BZ"},{"label":{"lbl":"Canada"},"value":"CA"},{"label":{"lbl":"CB"},"value":"CB"},{"label":{"lbl":"Cocos (Keeling) Islands"},"value":"CC"},{"label":{"lbl":"CD"},"value":"CD"},{"label":{"lbl":"CF"},"value":"CF"},{"label":{"lbl":"CG"},"value":"CG"},{"label":{"lbl":"Switzerland"},"value":"CH"},{"label":{"lbl":"Ivory Coast"},"value":"CI"},{"label":{"lbl":"Cook Islands"},"value":"CK"},{"label":{"lbl":"Chile"},"value":"CL"},{"label":{"lbl":"CM"},"value":"CM"},{"label":{"lbl":"China"},"value":"CN"},{"label":{"lbl":"Colombia"},"value":"CO"},{"label":{"lbl":"Costa Rica"},"value":"CR"},{"label":{"lbl":"CT"},"value":"CT"},{"label":{"lbl":"Cuba"},"value":"CU"},{"label":{"lbl":"CV"},"value":"CV"},{"label":{"lbl":"Christmas Island"},"value":"CX"},{"label":{"lbl":"Cyprus"},"value":"CY"},{"label":{"lbl":"Czech Republic"},"value":"CZ"},{"label":{"lbl":"Germany"},"value":"DE"},{"label":{"lbl":"DG"},"value":"DG"},{"label":{"lbl":"DJ"},"value":"DJ"},{"label":{"lbl":"Denmark"},"value":"DK"},{"label":{"lbl":"Dominica"},"value":"DM"},{"label":{"lbl":"Dominican Republic"},"value":"DO"},{"label":{"lbl":"Algeria"},"value":"DZ"},{"label":{"lbl":"Ecuador"},"value":"EC"},{"label":{"lbl":"Estonia"},"value":"EE"},{"label":{"lbl":"Egypt"},"value":"EG"},{"label":{"lbl":"EH"},"value":"EH"},{"label":{"lbl":"ER"},"value":"ER"},{"label":{"lbl":"Spain"},"value":"ES"},{"label":{"lbl":"Ethopia"},"value":"ET"},{"label":{"lbl":"Finland"},"value":"FI"},{"label":{"lbl":"Fiji"},"value":"FJ"},{"label":{"lbl":"Falkland Islands"},"value":"FK"},{"label":{"lbl":"Micronesia"},"value":"FM"},{"label":{"lbl":"Faroe Islands"},"value":"FO"},{"label":{"lbl":"France"},"value":"FR"},{"label":{"lbl":"GA"},"value":"GA"},{"label":{"lbl":"United Kingdom (UK)"},"value":"GB"},{"label":{"lbl":"Grenada"},"value":"GD"},{"label":{"lbl":"Georgia"},"value":"GE"},{"label":{"lbl":"French Guiana"},"value":"GF"},{"label":{"lbl":"Ghana"},"value":"GH"},{"label":{"lbl":"Gibraltar"},"value":"GI"},{"label":{"lbl":"Greenland"},"value":"GL"},{"label":{"lbl":"GM"},"value":"GM"},{"label":{"lbl":"Guinea"},"value":"GN"},{"label":{"lbl":"Guadeloupe"},"value":"GP"},{"label":{"lbl":"GQ"},"value":"GQ"},{"label":{"lbl":"Greece"},"value":"GR"},{"label":{"lbl":"GS"},"value":"GS"},{"label":{"lbl":"Guatemala"},"value":"GT"},{"label":{"lbl":"Guam"},"value":"GU"},{"label":{"lbl":"GW"},"value":"GW"},{"label":{"lbl":"Guyana"},"value":"GY"},{"label":{"lbl":"Hong Kong"},"value":"HK"},{"label":{"lbl":"Honduras"},"value":"HN"},{"label":{"lbl":"Croatia"},"value":"HR"},{"label":{"lbl":"Haiti"},"value":"HT"},{"label":{"lbl":"Hungary"},"value":"HU"},{"label":{"lbl":"Indonesia"},"value":"ID"},{"label":{"lbl":"Ireland"},"value":"IE"},{"label":{"lbl":"Israel"},"value":"IL"},{"label":{"lbl":"IM"},"value":"IM"},{"label":{"lbl":"India"},"value":"IN"},{"label":{"lbl":"IO"},"value":"IO"},{"label":{"lbl":"Iraq"},"value":"IQ"},{"label":{"lbl":"IR"},"value":"IR"},{"label":{"lbl":"Iceland"},"value":"IS"},{"label":{"lbl":"Italy"},"value":"IT"},{"label":{"lbl":"JL"},"value":"JL"},{"label":{"lbl":"Jamaica"},"value":"JM"},{"label":{"lbl":"Jordan"},"value":"JO"},{"label":{"lbl":"Japan"},"value":"JP"},{"label":{"lbl":"KA"},"value":"KA"},{"label":{"lbl":"Kenya"},"value":"KE"},{"label":{"lbl":"Kyrgyzstan"},"value":"KG"},{"label":{"lbl":"Cambodia"},"value":"KH"},{"label":{"lbl":"Kiribati"},"value":"KI"},{"label":{"lbl":"KL"},"value":"KL"},{"label":{"lbl":"KM"},"value":"KM"},{"label":{"lbl":"St. Christopher (St. Kitts) Nevis"},"value":"KN"},{"label":{"lbl":"Korea, Democratic Peoples Republic of"},"value":"KP"},{"label":{"lbl":"Republic of Korea"},"value":"KR"},{"label":{"lbl":"Kuwait"},"value":"KW"},{"label":{"lbl":"Cayman Islands"},"value":"KY"},{"label":{"lbl":"Kazakstan"},"value":"KZ"},{"label":{"lbl":"Lao Peoples Democratic Republic"},"value":"LA"},{"label":{"lbl":"Lebanon"},"value":"LB"},{"label":{"lbl":"St. Lucia"},"value":"LC"},{"label":{"lbl":"Liechtenstein"},"value":"LI"},{"label":{"lbl":"Sri Lanka"},"value":"LK"},{"label":{"lbl":"LR"},"value":"LR"},{"label":{"lbl":"LS"},"value":"LS"},{"label":{"lbl":"Lithuania"},"value":"LT"},{"label":{"lbl":"Luxembourg"},"value":"LU"},{"label":{"lbl":"Latvia"},"value":"LV"},{"label":{"lbl":"Libyan Arab Jamahiriya"},"value":"LY"},{"label":{"lbl":"Morocco"},"value":"MA"},{"label":{"lbl":"Monaco"},"value":"MC"},{"label":{"lbl":"Moldovo"},"value":"MD"},{"label":{"lbl":"Montenegro"},"value":"ME"},{"label":{"lbl":"MG"},"value":"MG"},{"label":{"lbl":"Marshall Islands"},"value":"MH"},{"label":{"lbl":"MI"},"value":"MI"},{"label":{"lbl":"Republic of Macedonia"},"value":"MK"},{"label":{"lbl":"ML"},"value":"ML"},{"label":{"lbl":"Myanmar, Union of"},"value":"MM"},{"label":{"lbl":"Mongolia"},"value":"MN"},{"label":{"lbl":"Macau"},"value":"MO"},{"label":{"lbl":"Northern Mariana Islands"},"value":"MP"},{"label":{"lbl":"Martinique"},"value":"MQ"},{"label":{"lbl":"MR"},"value":"MR"},{"label":{"lbl":"Monserrat"},"value":"MS"},{"label":{"lbl":"Malta"},"value":"MT"},{"label":{"lbl":"Mauritius"},"value":"MU"},{"label":{"lbl":"Maldives"},"value":"MV"},{"label":{"lbl":"MW"},"value":"MW"},{"label":{"lbl":"Mexico"},"value":"MX"},{"label":{"lbl":"Malaysia"},"value":"MY"},{"label":{"lbl":"MZ"},"value":"MZ"},{"label":{"lbl":"Namibia"},"value":"NA"},{"label":{"lbl":"New Caledonia"},"value":"NC"},{"label":{"lbl":"ND"},"value":"ND"},{"label":{"lbl":"NE"},"value":"NE"},{"label":{"lbl":"Norfolk Island"},"value":"NF"},{"label":{"lbl":"Nigeria"},"value":"NG"},{"label":{"lbl":"Nicaragua"},"value":"NI"},{"label":{"lbl":"Netherlands"},"value":"NL"},{"label":{"lbl":"Norway"},"value":"NO"},{"label":{"lbl":"Nepal"},"value":"NP"},{"label":{"lbl":"Nauru"},"value":"NR"},{"label":{"lbl":"Niue"},"value":"NU"},{"label":{"lbl":"New Zealand"},"value":"NZ"},{"label":{"lbl":"Oman"},"value":"OM"},{"label":{"lbl":"OU"},"value":"OU"},{"label":{"lbl":"Panama"},"value":"PA"},{"label":{"lbl":"Peru"},"value":"PE"},{"label":{"lbl":"French Polynesia"},"value":"PF"},{"label":{"lbl":"Papua New Guinea"},"value":"PG"},{"label":{"lbl":"Philippines"},"value":"PH"},{"label":{"lbl":"Pakistan"},"value":"PK"},{"label":{"lbl":"Poland"},"value":"PL"},{"label":{"lbl":"St. Pierre and Miquelon"},"value":"PM"},{"label":{"lbl":"PN"},"value":"PN"},{"label":{"lbl":"Puerto Rico"},"value":"PR"},{"label":{"lbl":"Palestinian Territory"},"value":"PS"},{"label":{"lbl":"Portugal"},"value":"PT"},{"label":{"lbl":"Palau"},"value":"PW"},{"label":{"lbl":"Paraguay"},"value":"PY"},{"label":{"lbl":"Qatar"},"value":"QA"},{"label":{"lbl":"Reunion"},"value":"RE"},{"label":{"lbl":"RK"},"value":"RK"},{"label":{"lbl":"Romania"},"value":"RO"},{"label":{"lbl":"RS"},"value":"RS"},{"label":{"lbl":"Russia"},"value":"RU"},{"label":{"lbl":"RW"},"value":"RW"},{"label":{"lbl":"Saudi Arabia"},"value":"SA"},{"label":{"lbl":"Solomon Islands"},"value":"SB"},{"label":{"lbl":"Seychelles"},"value":"SC"},{"label":{"lbl":"Sudan"},"value":"SD"},{"label":{"lbl":"Sweden"},"value":"SE"},{"label":{"lbl":"Singapore"},"value":"SG"},{"label":{"lbl":"St. Helena"},"value":"SH"},{"label":{"lbl":"Slovenia"},"value":"SI"},{"label":{"lbl":"Slovakia"},"value":"SK"},{"label":{"lbl":"SL"},"value":"SL"},{"label":{"lbl":"San Marino"},"value":"SM"},{"label":{"lbl":"Senegal"},"value":"SN"},{"label":{"lbl":"SO"},"value":"SO"},{"label":{"lbl":"Suriname"},"value":"SR"},{"label":{"lbl":"SS"},"value":"SS"},{"label":{"lbl":"ST"},"value":"ST"},{"label":{"lbl":"El Salvador"},"value":"SV"},{"label":{"lbl":"SX"},"value":"SX"},{"label":{"lbl":"SY"},"value":"SY"},{"label":{"lbl":"Swaziland"},"value":"SZ"},{"label":{"lbl":"Turks and Caicos Islands"},"value":"TC"},{"label":{"lbl":"TD"},"value":"TD"},{"label":{"lbl":"TG"},"value":"TG"},{"label":{"lbl":"Thailand"},"value":"TH"},{"label":{"lbl":"Turkmenistan"},"value":"TM"},{"label":{"lbl":"Tunisia"},"value":"TN"},{"label":{"lbl":"Tonga"},"value":"TO"},{"label":{"lbl":"Turkey"},"value":"TR"},{"label":{"lbl":"Trinidad and Tobago"},"value":"TT"},{"label":{"lbl":"Tuvalu"},"value":"TV"},{"label":{"lbl":"Taiwan"},"value":"TW"},{"label":{"lbl":"Tanzania"},"value":"TZ"},{"label":{"lbl":"Ukraine"},"value":"UA"},{"label":{"lbl":"Uganda"},"value":"UG"},{"label":{"lbl":"United States Minor Outlying Islands"},"value":"UM"},{"label":{"lbl":"United States (USA)"},"value":"US"},{"label":{"lbl":"UX"},"value":"UX"},{"label":{"lbl":"Uruguay"},"value":"UY"},{"label":{"lbl":"Uzbekistan"},"value":"UZ"},{"label":{"lbl":"VA"},"value":"VA"},{"label":{"lbl":"St. Vincent and The Grenadines"},"value":"VC"},{"label":{"lbl":"Venezuela"},"value":"VE"},{"label":{"lbl":"British Virgin Islands"},"value":"VG"},{"label":{"lbl":"Virgin Islands, United States"},"value":"VI"},{"label":{"lbl":"Viet Nam"},"value":"VN"},{"label":{"lbl":"Vanuatu"},"value":"VU"},{"label":{"lbl":"Wallis and Futuna Islands"},"value":"WF"},{"label":{"lbl":"Samoa"},"value":"WS"},{"label":{"lbl":"Yemen"},"value":"YE"},{"label":{"lbl":"Mayotte"},"value":"YT"},{"label":{"lbl":"YU"},"value":"YU"},{"label":{"lbl":"South Africa"},"value":"ZA"},{"label":{"lbl":"Zambia"},"value":"ZM"},{"label":{"lbl":"ZR"},"value":"ZR"},{"label":{"lbl":"Zimbabwe"},"value":"ZW"}]};
+      window.cardRules1 = [{"cardType":"VISA","prefix":"4","length":"13,16","checkDigit":true},{"cardType":"MAST","prefix":"51,52,53,54,55","length":"16","checkDigit":true},{"cardType":"DINERS","prefix":"300,301,302,303,304,305,36,38,55","length":"14,16","checkDigit":true},{"cardType":"AMEX","prefix":"34,37","length":"15","checkDigit":true},{"cardType":"MAESTRO","prefix":"5,6","length":"16,18","checkDigit":true},{"cardType":"VISAELEC","prefix":"4","length":"16","checkDigit":true},{"cardType":"SOLO","prefix":"4,5,6,6334,6767","length":"16,18,19","checkDigit":true},{"cardType":"CARTEBLEUE","prefix":"581784,6,4,5","length":"16","checkDigit":true},{"cardType":"CARTEBLEUEVISA","prefix":"581784,6,4,5","length":"16","checkDigit":true},{"cardType":"POSTEPAYMASTER","prefix":"51,52,53,54,55","length":"16","checkDigit":true},{"cardType":"POSTEPAYVISA","prefix":"4","length":"13,16","checkDigit":true},{"cardType":"VISADANKORT","prefix":"4","length":"13,16","checkDigit":true},{"cardType":"JCB","prefix":"35","length":"16,19","checkDigit":true}];
+      window.savedCardID =  0; 
+      window.errorLen = 0;
+      window.isEdit = false;
+      window.addr2 ="";
+      window.addr3 ="";
+      window.delOptionsInfoLen = 1;
+   </script>
+   <script>
+      window.errors = {
+      	cardNumberRequired : "Please enter a credit card number.",
+      	cardNumberInvalid : "The credit card number you've entered is incorrect. Please check and try again.",
+      	securityCodeRequired : "Please enter a security code.",
+      	securityCodeInvalid : "The security code you've entered is incorrect. Please check and try again.",
+      	firstNameRequired : "Please enter the cardholder's first name.",
+      	firstNameInvalid : "Please enter the cardholder's first name with at least two letters, using English alphabet characters only.",
+      	lastNameRequired : "Please enter the cardholder's last name.",
+      	lastNameInvalid : "Please enter the cardholder's last name with at least two letters, using English alphabet characters only.",
+      	countryRequired : "Please enter a country.",
+      	countryInvalid : "The country you've entered is incorrect. Please check and try again.",
+      	address1Required : "Please enter the cardholder's address.",
+      	address1Invalid : "Please enter the address with more detail using English alphabet characters and numbers only.",
+      	address2Invalid : "Please enter the address with more detail using English alphabet characters and numbers only.",
+      	address3Invalid : "Please enter the address with more detail using English alphabet characters and numbers only.",
+      	cityRequired : "Please enter a city.",
+      	cityInvalid : "The city you've entered is incorrect. Please check and try again.",
+      	stateRequired : "Please enter a province/state.",
+      	stateInvalid : "The province/state you've entered is incorrect. Please check and try again.",
+      	zipCodeRequired : "Please enter a post/ZIP code.",
+      	zipCodeInvalid : "The post/ZIP code you've entered is incorrect. Please check and try again.",
+      	fiscalCodeRequired : "Please enter CPF/CNPJ number.",
+      	fiscalCodeInvalid : "The CPF/CNPJ number you've entered is incorrect. Please check and try again.",
+      	companyNameRequired : "Please enter a company name.",
+      	companyNameInvalid : "error.paymentDetails.client.companyName.invalid",
+      	cardTypeRequired: "Please select a card type.",
+      	saveThisCardRequired: "error.saveThisCard.required",
+      	saveThisCardInvalid: "error.saveThisCard.invalid",
+      }
+      
+   </script>
+   <script type="text/javascript">
+      var errorBuilder = '';
+      var errorBuilderKey = '';
+      var pageId = 'mab_PAYDTL';
+      var duplicatePnrValue = '';
+      if (typeof dataLayer != "undefined") {
+      	if (errorBuilder != undefined && errorBuilder != ''
+      			&& errorBuilder != null) {
+      		errorBuilderKey = "System:MAB:" + errorBuilder;
+      		dataLayer.push({
+      			'siteErrorCode' : errorBuilderKey
+      		});
+      	}
+      }
+      
+      
+      	
+   </script>	
+   <script type="text/javascript">
+      if (typeof dataLayer != "undefined") {
+      	
+      	var basefareValueflightRouteUSD = "1029.76";		
+      	var basefareValueflightRoutePOSSiteCurrency = "3782.30";
+      	var taxValueflightRouteUSD = "149.51";
+      	var taxValueflightRoutePOSSiteCurrency = "549.17";
+      	var fuelSurchargeValueflightRouteUSD = "0.00";
+      	var fuelSurchargeValueflightRoutePOSSiteCurrency = "0.00";	
+      	var searchType = "";
+      	
+      	var creditcardSurchargeValueflightRouteUSD= "0";	
+      	var creditcardSurchargeValueflightRoutePOSSiteCurrency= "0.00";	
+      	var bookedValueflightRouteUSD= "1179.27";	
+      	var bookedValueflightRoutePOSSitecurrency= "4331.47";	
+      	var revenueValueFlightRouteUSD= "1029.76";	
+      	var revenueValueFlightRoutePOSSiteCurrency= "3782.30";
+      			
+      	var searchType = "";
+      	var showCCSurchage="false"
+      	var duplictaePNR= "";
+      	var pnrNumber = "";						
+      	var encryptedPNR = utf8_to_b64(pnrNumber);
+      	
+      	if(pageId == 'bookingConfirmation' && duplictaePNR == 'false' ){
+      		if( pnrNumber != undefined && pnrNumber != ''){
+      			if((store.get("ISGTMTAGGINGDONE") == undefined) || (store.get("ISGTMTAGGINGDONE") != encryptedPNR)){
+      				if(searchType!='Redeem'){
+      					var key = [ "basefareValueflightRouteUSD", "basefareValueflightRoutePOSSiteCurrency",
+      								"taxValueflightRouteUSD", "taxValueflightRoutePOSSiteCurrency",
+      								"fuelSurchargeValueflightRouteUSD", "fuelSurchargeValueflightRoutePOSSiteCurrency" ];
+      					var val = [ basefareValueflightRouteUSD, basefareValueflightRoutePOSSiteCurrency,
+      						            taxValueflightRouteUSD,taxValueflightRoutePOSSiteCurrency,
+      						            fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      					
+      					if(showCCSurchage == 'true'){
+      						var keyCCSur = [ "creditcardSurchargeValueflightRouteUSD", "creditcardSurchargeValueflightRoutePOSSiteCurrency",
+      										"bookedValueflightRouteUSD", "bookedValueflightRoutePOSSitecurrency",
+      										"revenueValueFlightRouteUSD", "revenueValueFlightRoutePOSSiteCurrency"];
+      						var valCCSur = [ creditcardSurchargeValueflightRouteUSD, creditcardSurchargeValueflightRoutePOSSiteCurrency,
+      							            bookedValueflightRouteUSD,bookedValueflightRoutePOSSitecurrency,
+      							            revenueValueFlightRouteUSD,revenueValueFlightRoutePOSSiteCurrency];	
+      					}
+      					else{
+      						var keyCCSur = [ "bookedValueflightRouteUSD", "bookedValueflightRoutePOSSitecurrency"];
+      						var valCCSur = [bookedValueflightRouteUSD,bookedValueflightRoutePOSSitecurrency];	
+      					}
+      				}
+      				else{
+      					
+      						
+      					
+      					var key = [ "taxValueflightRouteUSD", "taxValueflightRoutePOSSiteCurrency",
+      								"fuelSurchargeValueflightRouteUSD", "fuelSurchargeValueflightRoutePOSSiteCurrency" ];
+      					var val = [ taxValueflightRouteUSD,taxValueflightRoutePOSSiteCurrency,
+      						            fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];		
+      					var keyCCSur = ["revenueValueFlightRouteUSD", "revenueValueFlightRoutePOSSiteCurrency"];
+      					var valCCSur = [fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      					
+      				
+      				}
+      				
+      				var key1 = [ "cabinClassflightRoute", "flightRoute",
+      								"brandTypeflightRoute", "originAirportflightRoute",
+      								"passengerCountFlight", "originCountryflightRoute" ];
+      				var val1 = [ "Y", "KHI-JFK-KHI",
+      				             "FLEX | SAVER","KHI",
+      				             "1","PK"];										
+      			}
+      		
+      		}
+      	}
+      	else{
+      		
+      		if(pageId=='verifyItinerary'){
+      			if(searchType!='Redeem'){
+      			if(showCCSurchage == 'true'){
+      				var keyCCSur = [ "creditcardSurchargeValueflightRouteUSD", "creditcardSurchargeValueflightRoutePOSSiteCurrency",
+      								"bookedValueflightRouteUSD", "bookedValueflightRoutePOSSitecurrency",
+      								"revenueValueFlightRouteUSD", "revenueValueFlightRoutePOSSiteCurrency"];
+      				var valCCSur = [ creditcardSurchargeValueflightRouteUSD, creditcardSurchargeValueflightRoutePOSSiteCurrency,
+      					            bookedValueflightRouteUSD,bookedValueflightRoutePOSSitecurrency,
+      					            revenueValueFlightRouteUSD,revenueValueFlightRoutePOSSiteCurrency];	
+      			}
+      			else{
+      				var keyCCSur = [ "bookedValueflightRouteUSD", "bookedValueflightRoutePOSSitecurrency"];
+      				var valCCSur = [bookedValueflightRouteUSD,bookedValueflightRoutePOSSitecurrency];	
+      			}
+      			var key = [ "basefareValueflightRouteUSD", "basefareValueflightRoutePOSSiteCurrency",
+      						"taxValueflightRouteUSD", "taxValueflightRoutePOSSiteCurrency",
+      						"fuelSurchargeValueflightRouteUSD", "fuelSurchargeValueflightRoutePOSSiteCurrency" ];
+      			var val = [ basefareValueflightRouteUSD, basefareValueflightRoutePOSSiteCurrency,
+      				            taxValueflightRouteUSD,taxValueflightRoutePOSSiteCurrency,
+      				            fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      		}
+      			else{
+      				
+      					
+      				
+      				var key = [ "taxValueflightRouteUSD", "taxValueflightRoutePOSSiteCurrency",
+      							"fuelSurchargeValueflightRouteUSD", "fuelSurchargeValueflightRoutePOSSiteCurrency" ];
+      				var val = [ taxValueflightRouteUSD,taxValueflightRoutePOSSiteCurrency,
+      					            fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];		
+      				var keyCCSur = ["revenueValueFlightRouteUSD", "revenueValueFlightRoutePOSSiteCurrency"];
+      				var valCCSur = [fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      				
+      			
+      			}
+      		}
+      		else{
+      
+      			if(searchType!='Redeem'){
+      				
+      			var key = [ "basefareValueflightRouteUSD", "basefareValueflightRoutePOSSiteCurrency",
+      						"taxValueflightRouteUSD", "taxValueflightRoutePOSSiteCurrency",
+      						"fuelSurchargeValueflightRouteUSD", "fuelSurchargeValueflightRoutePOSSiteCurrency" ];
+      			var val = [ basefareValueflightRouteUSD, basefareValueflightRoutePOSSiteCurrency,
+      				            taxValueflightRouteUSD,taxValueflightRoutePOSSiteCurrency,
+      				            fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      			if(pageId !='mab_PAYDTL'){			
+      					var keyCCSur = [ "bookedValueflightRouteUSD", "bookedValueflightRoutePOSSitecurrency"];
+      					var valCCSur = [bookedValueflightRouteUSD,bookedValueflightRoutePOSSitecurrency];	
+      				}}
+      			else{
+      				
+      					
+      				
+      				var key = [ "taxValueflightRouteUSD", "taxValueflightRoutePOSSiteCurrency",
+      							"fuelSurchargeValueflightRouteUSD", "fuelSurchargeValueflightRoutePOSSiteCurrency" ];
+      				var val = [ taxValueflightRouteUSD,taxValueflightRoutePOSSiteCurrency,
+      					            fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      				if(pageId !='mab_PAYDTL'){
+      					var keyCCSur = ["revenueValueFlightRouteUSD", "revenueValueFlightRoutePOSSiteCurrency"];
+      					var valCCSur = [fuelSurchargeValueflightRouteUSD,fuelSurchargeValueflightRoutePOSSiteCurrency];	
+      				}
+      				
+      			
+      			}
+      		
+      		}
+      		
+      		var key1 = [ "cabinClassflightRoute", "flightRoute",
+      						"brandTypeflightRoute", "originAirportflightRoute",
+      						"passengerCountFlight", "originCountryflightRoute" ];
+      		var val1 = [ "Y", "KHI-JFK-KHI",
+      		             "FLEX | SAVER","KHI",
+      		             "1","PK"];	
+      	}
+      	
+      	analyticsPushMultipleOnClick(key1, val1);
+      	analyticsPushMultipleOnClick(key, val);
+      	analyticsPushMultipleOnClick(keyCCSur, valCCSur);
+      }
+      
+      
+      
+      	
+   </script>
+   <script tppe="text/javascript"></script>
+</html>

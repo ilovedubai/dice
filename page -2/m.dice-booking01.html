@@ -53,32 +53,97 @@
       <!-- ***************************************************************************************8 -->	
       <!-- Global Skyward variable for Analytics and contextual menu start by sofi -->
       <!-- Global Skyward variable for Analytics and contextual menu end by sofi-->
-	  <script>
-			  var QueryString = function () {
-			  // This function is anonymous, is executed immediately and 
-			  // the return value is assigned to QueryString!
-			  var query_string = {};
-			  var query = window.location.search.substring(1);
-			  var vars = query.split("&");
-			  for (var i=0;i<vars.length;i++) {
-				var pair = vars[i].split("=");
-					// If first entry with this name
-				if (typeof query_string[pair[0]] === "undefined") {
-				  query_string[pair[0]] = decodeURIComponent(pair[1]);
-					// If second entry with this name
-				} else if (typeof query_string[pair[0]] === "string") {
-				  var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-				  query_string[pair[0]] = arr;
-					// If third or later entry with this name
-				} else {
-				  query_string[pair[0]].push(decodeURIComponent(pair[1]));
-				}
-			  } 
-				return query_string;
-			}();
-	  </script>
    </head>
    <body >
+      <!-- Start Of Google Tag Manager -->
+      <script>
+         dataLayer = [{
+         
+         	'pageName' : 'Mobile Home | Home Page',
+         
+         	'pageCategory' : 'Mobile Home',// This should be same as s.channel value of Omniture
+         
+         	
+         
+         	'languageCode': 'EN',// Current Language selected by User from Country-Language selector page 
+         
+         	'countryCode': 'AE',// Current Country selected by User from Country-Language selector page
+         
+         	'visitorLoginState':'Logged Out',
+         
+         	'platformType':'HTML 5',
+         
+         	'serverName' : 'MOB-UK-2',
+         
+         	'pageType':'Product Page',
+         
+         	'pageSubSectionLevel2' : '',
+         
+         	'countryRegion':'AE|THE MIDDLE EAST',
+         
+         	'documentTitle' : 'Welcome to Emirates',
+         
+         	'frequentFlyerID' : '',
+         
+         	'personId': '', // FrequentFlyer ID for logged in users. 
+         
+              
+         
+              
+         
+              
+         
+         		
+         
+         		
+         
+         		'personAndGuestID': 'Without Profile',
+         
+         		
+         
+         		
+         
+         	
+         
+         	
+         
+         	
+         
+         	'memberTier': 'Without Profile',
+         
+         	'memberLoginType': 'Public',
+         
+         	
+         
+         	
+         
+         	
+         
+         	
+         
+         	
+         
+         	
+         
+         	
+         
+         	'isAppInstalled': 'NO'
+         
+         	}];
+         
+         
+         
+         
+         
+         
+         
+         
+         
+      </script>
+      <noscript>
+         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MMBK5G" height="0" width="0" style="display:none;visibility:hidden">
+         </iframe>
+      </noscript>
       <script>
          (
          

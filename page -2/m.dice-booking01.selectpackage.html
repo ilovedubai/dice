@@ -190,8 +190,8 @@
                <div class="booking-steps seven-step">
                   <span class="first active">Steps</span>
                   <span class="next-active">1</span>
-                  <span>2</span>
-                  <span>3</span>
+                  <span class="next-active">2</span>
+                  <span class="next-active">3</span>
                   <span>4</span>
                   <span>5</span>
                   <span>6</span>
@@ -202,29 +202,70 @@
                <meta charset="utf-8">
                <div class="search-result-container mt-20 cf">
                   <!-- Your search widget actions based on different conditions -->
-                  <a onclick="goToBAFModifySearch()" class="no-underline d-table full-width">
+                  <a onclick="m.dice-booking01.selectresults02.html" class="no-underline d-table full-width">
                      <span href="#" class="left-red-arrow-link">
                      <span class="icon"></span>
                      </span>
                      <div class="search-results-right">
-                        <h1 class="no-mg">Your search</h1>
+                        <h1 class="no-mg">Your departing trip</h1>
                         <div class="destination mt-15">
                            KHI
-                           <i class="ir el icon-arrive-return"></i>  
+                           <i class="ir el icon-blue-arrow-right"></i>
                            JFK
                         </div>
                         <div>
-                           <p class="fs-24">
+                           <p class="fs-24 fl-left mw50">
                               Wed 2 Sep
-                              - Sat 5 Sep
+                              <span class="d-block">                                    		
+                              22:30 - 19:00* 
+                              </span>   
+                              *Next day 
+                           </p>
+                           <p class="fs-24 fl-right mw50 pr-16">
+                              <span class="d-block">
+                              <strong>PKR 67,184</strong>
+                              </span>
+                              <span class="d-block">
+                              Economy Class
+                              Flex	                               	 			
+                              </span>
                            </p>
                         </div>
-                        <p class="people-container">
-                           Economy Class,
-                           <span>
-                           <span>							
-                           1 adult
-                           </span>
+                        </p>
+                     </div>
+                  </a>
+               </div>
+               <div class="search-result-container mt-20 cf">
+                  <!-- Your search widget actions based on different conditions -->
+                  <a onclick="m.dice-booking01.selectresults02.html" class="no-underline d-table full-width">
+                     <span href="#" class="left-red-arrow-link">
+                     <span class="icon"></span>
+                     </span>
+                     <div class="search-results-right">
+                        <h1 class="no-mg">Your returning trip</h1>
+                        <div class="destination mt-15">
+                           JFK
+                           <i class="ir el icon-blue-arrow-right"></i>
+                           KHI
+                        </div>
+                        <div>
+                           <p class="fs-24 fl-left mw50">
+                              Wed 5 Sep
+                              <span class="d-block">                                    		
+                              11:20 - 12:50* 
+                              </span>   
+                              *Next day 
+                           </p>
+                           <p class="fs-24 fl-right mw50 pr-16">
+                              <span class="d-block">
+                              <strong>PKR 52,901</strong>
+                              </span>
+                              <span class="d-block">
+                              Economy Class
+                              Flex	                               	 			
+                              </span>
+                           </p>
+                        </div>
                         </p>
                      </div>
                   </a>
@@ -242,43 +283,19 @@
                            <span>PKR 120,085</span>
                            for 1 passenger	
                         </p>
-                        <p class="fs-24 mt-16">Total price in Pakistani Rupee, including airfare, taxes, fees and carrier-imposed charges for 1 passenger. Conditions apply.</p>
+                        <p class="fs-24 mt-16">Total price in Pakistani Rupee, including transit package, taxes, fees and service-provider charges for 1 passenger. Conditions apply.</p>
                      </div>
                   </div>
                   <hr class="mt-32 mb-20">
                   <div class="select-departing-trip-container">
-                     <h1 class="fs-38 mb-20">Select your departing trip</h1>
+                     <h1 class="fs-38 mb-20">Select your stopover package</h1>
                      <div class="destination">
-                        KHI<i class="ir el icon-blue-arrow-right"></i>JFK
+                        KHI<i class="ir el icon-blue-arrow-right"></i>DXB
                      </div>
                      <p class="fs-24 mb-30">Wed 2 Sep</p>
                   </div>
                   <hr class="no-mg mb-16 mt-16">
-                  <p>
-                     <a href="http://www.emirates.com/ae/english/plan_book/essential_information/baggages/baggages.aspx?stop_mobi=yes" target="_blank" class="no-underline fs-24 blackAnchor">
-                     <span class="blackLinkArrowText">
-                     View baggage allowances and fees
-                     </span>
-                     <span class="blackLinkArrow ml-16">&nbsp;&nbsp;&nbsp;</span>
-                     </a>								            													
-                  </p>
-                  <hr class="no-mg mb-16 mt-16">
-                  <label for="" class="fs-24">Sort list by</label>
-                  <div class="switch-module buttons-3 bottom-margin-30px" id="sortTypeTabsDiv">
-                     <a data-tab-default="true" data-tab="type-tab-1" id="priceTab" data-tab-close="type-tab" onclick="sortByType(event,'Price', 1,1);" href="#" title="#" class="switch-button fs-28 left-button active">
-                     <span>Price</span>
-                     </a>
-                     <input type="radio" class="type-tab-1" data-switch-tab="" name="type-tab-2" value="Price">
-                     <a data-tab="type-tab-2" id="depTab" data-tab-close="type-tab" onclick="sortByType(event,'Time', 1,1);" href="#" title="#" class="switch-button fs-28 middle-button">
-                     <span>Departure time</span>
-                     </a>
-                     <input type="radio" class="type-tab-2" data-switch-tab="" name="type-tab-2" value="Time">
-                     <a data-tab="type-tab-3" id="durTab" data-tab-close="type-tab"  onclick="sortByType(event,'Duration', 1,1);" href="#" title="#" class="switch-button fs-28 right-button">
-                     <span>Duration</span>
-                     </a>
-                     <input type="radio" class="type-tab-3" data-switch-tab="" name="type-tab-2" value="Duration">
-                  </div>
-                  <p class="mb-8 fs-24">1-<span id="itemsLoadedCount">5</span> of 28 flight options</p>
+                  <p class="mb-8 fs-24">1-<span id="itemsLoadedCount">5</span> of 5 transit package options</p>
                </div>
                <div class="car-book-container ml-24 mr-24 mobile-fare-families main">
                   <form id="FlightSelectFormID" method="post" modelAttribute="FlightSelectForm" action="getBrandedSearchResultsInbound.xhtml">  	
@@ -302,16 +319,16 @@
                            <div class="expandable-tables-container">
                               <div class="d-table pb-8 full-width">
                                  <div class="cell v-top-imp">
-                                    <p class="pl-8">22:30 - 19:00*
+                                    <p class="pl-8">Emirati Package
                                     </p>
-                                    <p class="pl-8 fs-24">*Next day</p>
+                                    <p class="pl-8 fs-24"></p>
                                     <!-- star Logic ends -->
                                  </div>
                                  <div class="cell right-part">
                                     <p>
                                        from 
                                        <span> PKR 
-                                       67,184
+                                       8,250
                                        </span>
                                     </p>
                                     <p>
@@ -326,20 +343,8 @@
                                  <div class="d-table-row">
                                     <div class="d-table-cell pt-8">
                                        <p class="fs-24">
-                                          29hrs 30mins
+                                          Package valid for 4 hours stopover
                                        </p>
-                                       <p class="fs-24">
-                                          via
-                                          DXB
-                                          &amp;
-                                          MXP
-                                          (
-                                          1 stop										
-                                          )
-                                       </p>
-                                    </div>
-                                    <div class="d-table-cell text-right mw33 v-middle">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" width="25" class="v-top">		                         
                                     </div>
                                  </div>
                               </div>
@@ -367,158 +372,6 @@
                            <div id="flightDetailsDiv_1" class="cf no-mg">
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <!-- Loop over flight legs starts -->
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Karachi (KHI) 
-                                    to
-                                    Dubai (DXB) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK603</strong></p>
-                                       <!--  <p class="fs-20">Airbus Industrie A330-200</p>-->
-                                       <p class="fs-20">Airbus A330-200</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>22:30</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>23:45</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>2hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">								
-                                                Non-stop
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!--?xml version="1.0" encoding="utf-8" ?-->
-                              <meta charset="utf-8">
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <!-- *********************Class Not available starts only for Branded Pow search*********************** -->
-                              <!-- 	<div class="travel-class"> -->
-                              <!-- 	    <i class="ir el icon-gray-excl"></i> -->
-                              <!-- 	    <span> -->
-                              <!-- 	        First class in not offered on this flight. This part of your -->
-                              <!-- 	        trip will be in our <strong>Business Class</strong> cabin. -->
-                              <!-- 	    </span> -->
-                              <!-- 	</div> -->
-                              <!-- *********************Class Not available ends only for Branded Pow search*********************** -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <div class="connection-details accordion-container">
-                                 <h1 class="fs-24"><i class="ir el icon-planes-connection"></i>Connection in Dubai: 10hrs 00min</h1>
-                              </div>
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Dubai (DXB) 
-                                    to
-                                    New York (JFK) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK205</strong></p>
-                                       <!--  <p class="fs-20">Airbus A380-800</p>-->
-                                       <p class="fs-20">Airbus A380-800</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>09:45</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>19:00</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>17hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div id="stopOverDiv_1_2" class="table-inner-content fs-22">
-                                             <a href="#" onclick="stopOverDetails('#stopOverDiv_', event,'RE','DXB','JFK','EK205','2015/09/03','EK','1_2','searchByPriceResults');" data-accordion="flight-details" class="color-dark-gray accordion-white-border-cell small-exp_coll_icons" style="cursor: pointer;"> 
-                                             1 stop<i class="ir el icon-red-arrow"></i>
-                                             </a>
-                                          </div>
-                                          <!--     else 0 stops -->
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div id="stopOverDetails_1_2" class="flight-details" style="display: none; height: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;"> 
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
                               <!-- For Multi or any schedule search include class starts -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
@@ -552,22 +405,18 @@
                               <meta charset="utf-8">
                               <div id="compareAccordianDiv_1" class="select-fare mt-20 accordion-container">
                                  <div id="compareRefDiv_1" class="select-fare-heading cf pb-16">
-                                    <p class="fl-left no-mg fs-28">Choose a fare</p>
-                                    <p class="fl-right no-mg fs-24 lh-42">
-                                       <a href="#" onclick="loadCompareFare(event, 1, 'searchByPriceResults', 'false'); return false;" class="color-dark-gray no-underline">Compare fares<i class="ir el icon-info"></i></a>
-                                    </p>
+                                    <p class="fl-left no-mg fs-28">Choose a stopover Emirati Package</p>
                                  </div>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEX-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex</h1>
-                                             <!--   <p class="fs-20">Earn 8,500 miles</p>-->
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Silver</h1>
                                              <p class="lowest-price-indicator">
                                                 <i class="ir el icon-tick"></i>Lowest price
                                              </p>
                                              <p class="fs-20">
-                                                Earn 4900 Miles
+                                                Metro tour without guide 
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -575,7 +424,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 67,184.00
+                                                      PKR 8,250.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -587,14 +436,14 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEXPLUS-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex Plus</h1>
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Gold</h1>
                                              <!--   <p class="fs-20">Earn 8,500 miles</p>-->
                                              <p class="fs-20">
-                                                Earn 7000 Miles
+                                                Guided Metro tour, Burj Khalif The Top and Dubai Mall
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -602,7 +451,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 82,994.00
+                                                      PKR 13,994.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -622,20 +471,20 @@
                         <!-- / Expandable menu -->
                      </div>
                      <div id="priceDetailsDiv_2" class="default-accordion accordion-container cf no-pd active">
-                        <a id="priceFlightDetails_2" href="#" onclick="loadFlightDetails(event,2, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
+                        <a id="priceFlightDetails_1" href="#" onclick="loadFlightDetails(event,1, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
                            <div class="expandable-tables-container">
                               <div class="d-table pb-8 full-width">
                                  <div class="cell v-top-imp">
-                                    <p class="pl-8">19:45 - 19:00*
+                                    <p class="pl-8">Emirati Package
                                     </p>
-                                    <p class="pl-8 fs-24">*Next day</p>
+                                    <p class="pl-8 fs-24"></p>
                                     <!-- star Logic ends -->
                                  </div>
                                  <div class="cell right-part">
                                     <p>
                                        from 
                                        <span> PKR 
-                                       67,184
+                                       8,250
                                        </span>
                                     </p>
                                     <p>
@@ -650,27 +499,15 @@
                                  <div class="d-table-row">
                                     <div class="d-table-cell pt-8">
                                        <p class="fs-24">
-                                          32hrs 15mins
+                                          Package valid for 4 hours stopover
                                        </p>
-                                       <p class="fs-24">
-                                          via
-                                          DXB
-                                          &amp;
-                                          MXP
-                                          (
-                                          1 stop										
-                                          )
-                                       </p>
-                                    </div>
-                                    <div class="d-table-cell text-right mw33 v-middle">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" width="25" class="v-top">		                         
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </a>
                         <!-- Expandable menu -->
-                        <div id="expandable_div_2" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
+                        <div id="expandable_div_1" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
                            <!-- Common Msgs starts-->
                            <!-- 				<div class="gray-alert custom-gray-alert no-radius accordion-container"> -->
                            <!-- 	                <h4><i class="ir el icon-alert"></i> Important information</h4> -->
@@ -687,162 +524,10 @@
                            <!-- 	            </div> -->
                            <!-- Common Msgs ends -->			     
                            <!-- Upcoming table Depart -->
-                           <input type="hidden" id="success_2" value="">		            
-                           <div id="flightDetailsDiv_2" class="cf no-mg">
+                           <input type="hidden" id="success_1" value="">		            
+                           <div id="flightDetailsDiv_1" class="cf no-mg">
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <!-- Loop over flight legs starts -->
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Karachi (KHI) 
-                                    to
-                                    Dubai (DXB) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK609</strong></p>
-                                       <!--  <p class="fs-20">Boeing 777-300</p>-->
-                                       <p class="fs-20">Boeing 777-300</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>19:45</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>21:00</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>2hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">								
-                                                Non-stop
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!--?xml version="1.0" encoding="utf-8" ?-->
-                              <meta charset="utf-8">
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <!-- *********************Class Not available starts only for Branded Pow search*********************** -->
-                              <!-- 	<div class="travel-class"> -->
-                              <!-- 	    <i class="ir el icon-gray-excl"></i> -->
-                              <!-- 	    <span> -->
-                              <!-- 	        First class in not offered on this flight. This part of your -->
-                              <!-- 	        trip will be in our <strong>Business Class</strong> cabin. -->
-                              <!-- 	    </span> -->
-                              <!-- 	</div> -->
-                              <!-- *********************Class Not available ends only for Branded Pow search*********************** -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <div class="connection-details accordion-container">
-                                 <h1 class="fs-24"><i class="ir el icon-planes-connection"></i>Connection in Dubai: 12hrs 45mins</h1>
-                              </div>
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Dubai (DXB) 
-                                    to
-                                    New York (JFK) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK205</strong></p>
-                                       <!--  <p class="fs-20">Airbus A380-800</p>-->
-                                       <p class="fs-20">Airbus A380-800</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>09:45</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>19:00</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>17hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div id="stopOverDiv_2_2" class="table-inner-content fs-22">
-                                             <a href="#" onclick="stopOverDetails('#stopOverDiv_', event,'RE','DXB','JFK','EK205','2015/09/03','EK','2_2','searchByPriceResults');" data-accordion="flight-details" class="color-dark-gray accordion-white-border-cell small-exp_coll_icons" style="cursor: pointer;"> 
-                                             1 stop<i class="ir el icon-red-arrow"></i>
-                                             </a>
-                                          </div>
-                                          <!--     else 0 stops -->
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div id="stopOverDetails_2_2" class="flight-details" style="display: none; height: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;"> 
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
                               <!-- For Multi or any schedule search include class starts -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
@@ -863,35 +548,31 @@
                               <meta charset="utf-8">
                               <!-- *********************Any other message ends*********************** -->
                               <input type="hidden" name="flightSeqNo" value="0">
-                              <input type="hidden" name="flightOptionID" value="2">
+                              <input type="hidden" name="flightOptionID" value="1">
                               <input type="hidden" name="flightIDList" value="">					
                               <input type="hidden" name="segmentNumber" value="1">
                               <input type="hidden" name="multiLowestPriceFltWise" class="multiLowestPriceFltWise" value="">
                               <input type="hidden" name="optionTabFltWise" class="optionTabFltWise" value="">
                               <input type="hidden" name="sortTypeFltWise" class="sortTypeFltWise" value="">
-                              <input type="hidden" name="indexSel" class="indexSel" value="2">
-                              <input type="hidden" name="flightSelList" value="EK609_EK205">
+                              <input type="hidden" name="indexSel" class="indexSel" value="1">
+                              <input type="hidden" name="flightSelList" value="EK603_EK205">
                               <!-- Show the Branded Details only in case of Branded powershopper search -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <div id="compareAccordianDiv_2" class="select-fare mt-20 accordion-container">
-                                 <div id="compareRefDiv_2" class="select-fare-heading cf pb-16">
-                                    <p class="fl-left no-mg fs-28">Choose a fare</p>
-                                    <p class="fl-right no-mg fs-24 lh-42">
-                                       <a href="#" onclick="loadCompareFare(event, 2, 'searchByPriceResults', 'false'); return false;" class="color-dark-gray no-underline">Compare fares<i class="ir el icon-info"></i></a>
-                                    </p>
+                              <div id="compareAccordianDiv_1" class="select-fare mt-20 accordion-container">
+                                 <div id="compareRefDiv_1" class="select-fare-heading cf pb-16">
+                                    <p class="fl-left no-mg fs-28">Choose a stopover Emirati Package</p>
                                  </div>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEX-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex</h1>
-                                             <!--   <p class="fs-20">Earn 8,500 miles</p>-->
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Silver</h1>
                                              <p class="lowest-price-indicator">
                                                 <i class="ir el icon-tick"></i>Lowest price
                                              </p>
                                              <p class="fs-20">
-                                                Earn 4900 Miles
+                                                Metro tour without guide 
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -899,7 +580,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 67,184.00
+                                                      PKR 8,250.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -911,14 +592,14 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEXPLUS-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex Plus</h1>
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Gold</h1>
                                              <!--   <p class="fs-20">Earn 8,500 miles</p>-->
                                              <p class="fs-20">
-                                                Earn 7000 Miles
+                                                Guided Metro tour, Burj Khalif The Top and Dubai Mall
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -926,7 +607,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 82,994.00
+                                                      PKR 13,994.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -946,20 +627,20 @@
                         <!-- / Expandable menu -->
                      </div>
                      <div id="priceDetailsDiv_3" class="default-accordion accordion-container cf no-pd active">
-                        <a id="priceFlightDetails_3" href="#" onclick="loadFlightDetails(event,3, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
+                        <a id="priceFlightDetails_1" href="#" onclick="loadFlightDetails(event,1, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
                            <div class="expandable-tables-container">
                               <div class="d-table pb-8 full-width">
                                  <div class="cell v-top-imp">
-                                    <p class="pl-8">14:15 - 19:00*
+                                    <p class="pl-8">Emirati Package
                                     </p>
-                                    <p class="pl-8 fs-24">*Next day</p>
+                                    <p class="pl-8 fs-24"></p>
                                     <!-- star Logic ends -->
                                  </div>
                                  <div class="cell right-part">
                                     <p>
                                        from 
                                        <span> PKR 
-                                       67,184
+                                       8,250
                                        </span>
                                     </p>
                                     <p>
@@ -974,27 +655,15 @@
                                  <div class="d-table-row">
                                     <div class="d-table-cell pt-8">
                                        <p class="fs-24">
-                                          37hrs 45mins
+                                          Package valid for 4 hours stopover
                                        </p>
-                                       <p class="fs-24">
-                                          via
-                                          DXB
-                                          &amp;
-                                          MXP
-                                          (
-                                          1 stop										
-                                          )
-                                       </p>
-                                    </div>
-                                    <div class="d-table-cell text-right mw33 v-middle">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" width="25" class="v-top">		                         
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </a>
                         <!-- Expandable menu -->
-                        <div id="expandable_div_3" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
+                        <div id="expandable_div_1" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
                            <!-- Common Msgs starts-->
                            <!-- 				<div class="gray-alert custom-gray-alert no-radius accordion-container"> -->
                            <!-- 	                <h4><i class="ir el icon-alert"></i> Important information</h4> -->
@@ -1011,162 +680,10 @@
                            <!-- 	            </div> -->
                            <!-- Common Msgs ends -->			     
                            <!-- Upcoming table Depart -->
-                           <input type="hidden" id="success_3" value="">		            
-                           <div id="flightDetailsDiv_3" class="cf no-mg">
+                           <input type="hidden" id="success_1" value="">		            
+                           <div id="flightDetailsDiv_1" class="cf no-mg">
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <!-- Loop over flight legs starts -->
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Karachi (KHI) 
-                                    to
-                                    Dubai (DXB) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK607</strong></p>
-                                       <!--  <p class="fs-20">Airbus Industrie A330-200</p>-->
-                                       <p class="fs-20">Airbus A330-200</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>14:15</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>15:15</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>2hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">00min</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">								
-                                                Non-stop
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!--?xml version="1.0" encoding="utf-8" ?-->
-                              <meta charset="utf-8">
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <!-- *********************Class Not available starts only for Branded Pow search*********************** -->
-                              <!-- 	<div class="travel-class"> -->
-                              <!-- 	    <i class="ir el icon-gray-excl"></i> -->
-                              <!-- 	    <span> -->
-                              <!-- 	        First class in not offered on this flight. This part of your -->
-                              <!-- 	        trip will be in our <strong>Business Class</strong> cabin. -->
-                              <!-- 	    </span> -->
-                              <!-- 	</div> -->
-                              <!-- *********************Class Not available ends only for Branded Pow search*********************** -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <div class="connection-details accordion-container">
-                                 <h1 class="fs-24"><i class="ir el icon-planes-connection"></i>Connection in Dubai: 18hrs 30mins</h1>
-                              </div>
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Dubai (DXB) 
-                                    to
-                                    New York (JFK) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK205</strong></p>
-                                       <!--  <p class="fs-20">Airbus A380-800</p>-->
-                                       <p class="fs-20">Airbus A380-800</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>09:45</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>19:00</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>17hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div id="stopOverDiv_3_2" class="table-inner-content fs-22">
-                                             <a href="#" onclick="stopOverDetails('#stopOverDiv_', event,'RE','DXB','JFK','EK205','2015/09/03','EK','3_2','searchByPriceResults');" data-accordion="flight-details" class="color-dark-gray accordion-white-border-cell small-exp_coll_icons" style="cursor: pointer;"> 
-                                             1 stop<i class="ir el icon-red-arrow"></i>
-                                             </a>
-                                          </div>
-                                          <!--     else 0 stops -->
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div id="stopOverDetails_3_2" class="flight-details" style="display: none; height: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;"> 
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
                               <!-- For Multi or any schedule search include class starts -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
@@ -1187,35 +704,31 @@
                               <meta charset="utf-8">
                               <!-- *********************Any other message ends*********************** -->
                               <input type="hidden" name="flightSeqNo" value="0">
-                              <input type="hidden" name="flightOptionID" value="3">
+                              <input type="hidden" name="flightOptionID" value="1">
                               <input type="hidden" name="flightIDList" value="">					
                               <input type="hidden" name="segmentNumber" value="1">
                               <input type="hidden" name="multiLowestPriceFltWise" class="multiLowestPriceFltWise" value="">
                               <input type="hidden" name="optionTabFltWise" class="optionTabFltWise" value="">
                               <input type="hidden" name="sortTypeFltWise" class="sortTypeFltWise" value="">
-                              <input type="hidden" name="indexSel" class="indexSel" value="3">
-                              <input type="hidden" name="flightSelList" value="EK607_EK205">
+                              <input type="hidden" name="indexSel" class="indexSel" value="1">
+                              <input type="hidden" name="flightSelList" value="EK603_EK205">
                               <!-- Show the Branded Details only in case of Branded powershopper search -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <div id="compareAccordianDiv_3" class="select-fare mt-20 accordion-container">
-                                 <div id="compareRefDiv_3" class="select-fare-heading cf pb-16">
-                                    <p class="fl-left no-mg fs-28">Choose a fare</p>
-                                    <p class="fl-right no-mg fs-24 lh-42">
-                                       <a href="#" onclick="loadCompareFare(event, 3, 'searchByPriceResults', 'false'); return false;" class="color-dark-gray no-underline">Compare fares<i class="ir el icon-info"></i></a>
-                                    </p>
+                              <div id="compareAccordianDiv_1" class="select-fare mt-20 accordion-container">
+                                 <div id="compareRefDiv_1" class="select-fare-heading cf pb-16">
+                                    <p class="fl-left no-mg fs-28">Choose a stopover Emirati Package</p>
                                  </div>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEX-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex</h1>
-                                             <!--   <p class="fs-20">Earn 8,500 miles</p>-->
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Silver</h1>
                                              <p class="lowest-price-indicator">
                                                 <i class="ir el icon-tick"></i>Lowest price
                                              </p>
                                              <p class="fs-20">
-                                                Earn 4900 Miles
+                                                Metro tour without guide 
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -1223,7 +736,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 67,184.00
+                                                      PKR 8,250.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -1235,14 +748,14 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEXPLUS-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex Plus</h1>
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Gold</h1>
                                              <!--   <p class="fs-20">Earn 8,500 miles</p>-->
                                              <p class="fs-20">
-                                                Earn 7000 Miles
+                                                Guided Metro tour, Burj Khalif The Top and Dubai Mall
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -1250,7 +763,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 82,994.00
+                                                      PKR 13,994.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -1270,20 +783,20 @@
                         <!-- / Expandable menu -->
                      </div>
                      <div id="priceDetailsDiv_4" class="default-accordion accordion-container cf no-pd active">
-                        <a id="priceFlightDetails_4" href="#" onclick="loadFlightDetails(event,4, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
+                        <a id="priceFlightDetails_1" href="#" onclick="loadFlightDetails(event,1, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
                            <div class="expandable-tables-container">
                               <div class="d-table pb-8 full-width">
                                  <div class="cell v-top-imp">
-                                    <p class="pl-8">12:15 - 19:00*
+                                    <p class="pl-8">Emirati Package
                                     </p>
-                                    <p class="pl-8 fs-24">*Next day</p>
+                                    <p class="pl-8 fs-24"></p>
                                     <!-- star Logic ends -->
                                  </div>
                                  <div class="cell right-part">
                                     <p>
                                        from 
                                        <span> PKR 
-                                       67,184
+                                       8,250
                                        </span>
                                     </p>
                                     <p>
@@ -1298,27 +811,15 @@
                                  <div class="d-table-row">
                                     <div class="d-table-cell pt-8">
                                        <p class="fs-24">
-                                          39hrs 45mins
+                                          Package valid for 4 hours stopover
                                        </p>
-                                       <p class="fs-24">
-                                          via
-                                          DXB
-                                          &amp;
-                                          MXP
-                                          (
-                                          1 stop										
-                                          )
-                                       </p>
-                                    </div>
-                                    <div class="d-table-cell text-right mw33 v-middle">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" width="25" class="v-top">		                         
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </a>
                         <!-- Expandable menu -->
-                        <div id="expandable_div_4" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
+                        <div id="expandable_div_1" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
                            <!-- Common Msgs starts-->
                            <!-- 				<div class="gray-alert custom-gray-alert no-radius accordion-container"> -->
                            <!-- 	                <h4><i class="ir el icon-alert"></i> Important information</h4> -->
@@ -1335,162 +836,10 @@
                            <!-- 	            </div> -->
                            <!-- Common Msgs ends -->			     
                            <!-- Upcoming table Depart -->
-                           <input type="hidden" id="success_4" value="">		            
-                           <div id="flightDetailsDiv_4" class="cf no-mg">
+                           <input type="hidden" id="success_1" value="">		            
+                           <div id="flightDetailsDiv_1" class="cf no-mg">
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <!-- Loop over flight legs starts -->
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Karachi (KHI) 
-                                    to
-                                    Dubai (DXB) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK601</strong></p>
-                                       <!--  <p class="fs-20">Boeing 777-300</p>-->
-                                       <p class="fs-20">Boeing 777-300</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>12:15</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>13:15</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>2hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">00min</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">								
-                                                Non-stop
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!--?xml version="1.0" encoding="utf-8" ?-->
-                              <meta charset="utf-8">
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <!-- *********************Class Not available starts only for Branded Pow search*********************** -->
-                              <!-- 	<div class="travel-class"> -->
-                              <!-- 	    <i class="ir el icon-gray-excl"></i> -->
-                              <!-- 	    <span> -->
-                              <!-- 	        First class in not offered on this flight. This part of your -->
-                              <!-- 	        trip will be in our <strong>Business Class</strong> cabin. -->
-                              <!-- 	    </span> -->
-                              <!-- 	</div> -->
-                              <!-- *********************Class Not available ends only for Branded Pow search*********************** -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <div class="connection-details accordion-container">
-                                 <h1 class="fs-24"><i class="ir el icon-planes-connection"></i>Connection in Dubai: 20hrs 30mins</h1>
-                              </div>
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Dubai (DXB) 
-                                    to
-                                    New York (JFK) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK205</strong></p>
-                                       <!--  <p class="fs-20">Airbus A380-800</p>-->
-                                       <p class="fs-20">Airbus A380-800</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>09:45</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>19:00</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>17hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div id="stopOverDiv_4_2" class="table-inner-content fs-22">
-                                             <a href="#" onclick="stopOverDetails('#stopOverDiv_', event,'RE','DXB','JFK','EK205','2015/09/03','EK','4_2','searchByPriceResults');" data-accordion="flight-details" class="color-dark-gray accordion-white-border-cell small-exp_coll_icons" style="cursor: pointer;"> 
-                                             1 stop<i class="ir el icon-red-arrow"></i>
-                                             </a>
-                                          </div>
-                                          <!--     else 0 stops -->
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div id="stopOverDetails_4_2" class="flight-details" style="display: none; height: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;"> 
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
                               <!-- For Multi or any schedule search include class starts -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
@@ -1511,35 +860,31 @@
                               <meta charset="utf-8">
                               <!-- *********************Any other message ends*********************** -->
                               <input type="hidden" name="flightSeqNo" value="0">
-                              <input type="hidden" name="flightOptionID" value="4">
+                              <input type="hidden" name="flightOptionID" value="1">
                               <input type="hidden" name="flightIDList" value="">					
                               <input type="hidden" name="segmentNumber" value="1">
                               <input type="hidden" name="multiLowestPriceFltWise" class="multiLowestPriceFltWise" value="">
                               <input type="hidden" name="optionTabFltWise" class="optionTabFltWise" value="">
                               <input type="hidden" name="sortTypeFltWise" class="sortTypeFltWise" value="">
-                              <input type="hidden" name="indexSel" class="indexSel" value="4">
-                              <input type="hidden" name="flightSelList" value="EK601_EK205">
+                              <input type="hidden" name="indexSel" class="indexSel" value="1">
+                              <input type="hidden" name="flightSelList" value="EK603_EK205">
                               <!-- Show the Branded Details only in case of Branded powershopper search -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <div id="compareAccordianDiv_4" class="select-fare mt-20 accordion-container">
-                                 <div id="compareRefDiv_4" class="select-fare-heading cf pb-16">
-                                    <p class="fl-left no-mg fs-28">Choose a fare</p>
-                                    <p class="fl-right no-mg fs-24 lh-42">
-                                       <a href="#" onclick="loadCompareFare(event, 4, 'searchByPriceResults', 'false'); return false;" class="color-dark-gray no-underline">Compare fares<i class="ir el icon-info"></i></a>
-                                    </p>
+                              <div id="compareAccordianDiv_1" class="select-fare mt-20 accordion-container">
+                                 <div id="compareRefDiv_1" class="select-fare-heading cf pb-16">
+                                    <p class="fl-left no-mg fs-28">Choose a stopover Emirati Package</p>
                                  </div>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEX-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex</h1>
-                                             <!--   <p class="fs-20">Earn 8,500 miles</p>-->
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Silver</h1>
                                              <p class="lowest-price-indicator">
                                                 <i class="ir el icon-tick"></i>Lowest price
                                              </p>
                                              <p class="fs-20">
-                                                Earn 4900 Miles
+                                                Metro tour without guide 
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -1547,7 +892,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 67,184.00
+                                                      PKR 8,250.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -1559,14 +904,14 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEXPLUS-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex Plus</h1>
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Gold</h1>
                                              <!--   <p class="fs-20">Earn 8,500 miles</p>-->
                                              <p class="fs-20">
-                                                Earn 7000 Miles
+                                                Guided Metro tour, Burj Khalif The Top and Dubai Mall
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -1574,7 +919,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 82,994.00
+                                                      PKR 13,994.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -1594,20 +939,20 @@
                         <!-- / Expandable menu -->
                      </div>
                      <div id="priceDetailsDiv_5" class="default-accordion accordion-container cf no-pd active">
-                        <a id="priceFlightDetails_5" href="#" onclick="loadFlightDetails(event,5, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
+                        <a id="priceFlightDetails_1" href="#" onclick="loadFlightDetails(event,1, 'RE', 1,'searchByPriceResults');" data-accordion="expandable-menu" title="" class="btn-more with-arrow link-alt table opened" data-open-scroll="end" style="cursor: pointer;">
                            <div class="expandable-tables-container">
                               <div class="d-table pb-8 full-width">
                                  <div class="cell v-top-imp">
-                                    <p class="pl-8">09:40 - 19:00*
+                                    <p class="pl-8">Emirati Package
                                     </p>
-                                    <p class="pl-8 fs-24">*Next day</p>
+                                    <p class="pl-8 fs-24"></p>
                                     <!-- star Logic ends -->
                                  </div>
                                  <div class="cell right-part">
                                     <p>
                                        from 
                                        <span> PKR 
-                                       67,184
+                                       8,250
                                        </span>
                                     </p>
                                     <p>
@@ -1622,27 +967,15 @@
                                  <div class="d-table-row">
                                     <div class="d-table-cell pt-8">
                                        <p class="fs-24">
-                                          42hrs 20mins
+                                          Package valid for 4 hours stopover
                                        </p>
-                                       <p class="fs-24">
-                                          via
-                                          DXB
-                                          &amp;
-                                          MXP
-                                          (
-                                          1 stop										
-                                          )
-                                       </p>
-                                    </div>
-                                    <div class="d-table-cell text-right mw33 v-middle">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" width="25" class="v-top">		                         
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </a>
                         <!-- Expandable menu -->
-                        <div id="expandable_div_5" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
+                        <div id="expandable_div_1" class="expandable-menu cf inner-padding opened" style="display: block; height: auto; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; overflow: hidden;">
                            <!-- Common Msgs starts-->
                            <!-- 				<div class="gray-alert custom-gray-alert no-radius accordion-container"> -->
                            <!-- 	                <h4><i class="ir el icon-alert"></i> Important information</h4> -->
@@ -1659,162 +992,10 @@
                            <!-- 	            </div> -->
                            <!-- Common Msgs ends -->			     
                            <!-- Upcoming table Depart -->
-                           <input type="hidden" id="success_5" value="">		            
-                           <div id="flightDetailsDiv_5" class="cf no-mg">
+                           <input type="hidden" id="success_1" value="">		            
+                           <div id="flightDetailsDiv_1" class="cf no-mg">
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <!-- Loop over flight legs starts -->
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Karachi (KHI) 
-                                    to
-                                    Dubai (DXB) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK619</strong></p>
-                                       <!--  <p class="fs-20">Airbus Industrie A330-200</p>-->
-                                       <p class="fs-20">Airbus A330-200</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>09:40</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>10:55</strong></p>
-                                             <p class="fs-20">Wednesday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>2hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">2 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">								
-                                                Non-stop
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!--?xml version="1.0" encoding="utf-8" ?-->
-                              <meta charset="utf-8">
-                              <!-- For Multi or any schedule search include class starts -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <!-- *********************Class Not available starts only for Branded Pow search*********************** -->
-                              <!-- 	<div class="travel-class"> -->
-                              <!-- 	    <i class="ir el icon-gray-excl"></i> -->
-                              <!-- 	    <span> -->
-                              <!-- 	        First class in not offered on this flight. This part of your -->
-                              <!-- 	        trip will be in our <strong>Business Class</strong> cabin. -->
-                              <!-- 	    </span> -->
-                              <!-- 	</div> -->
-                              <!-- *********************Class Not available ends only for Branded Pow search*********************** -->
-                              <!-- For Multi or any schedule search include class ends -->
-                              <div class="connection-details accordion-container">
-                                 <h1 class="fs-24"><i class="ir el icon-planes-connection"></i>Connection in Dubai: 22hrs 50mins</h1>
-                              </div>
-                              <div class="body extended cf accordion-container">
-                                 <div class="table-header"><strong>Dubai (DXB) 
-                                    to
-                                    New York (JFK) 
-                                    </strong>
-                                 </div>
-                                 <div class="table-body">
-                                    <div class="table-body-cell-left">
-                                       <img src="https://mobile.emirates.com/ae/english/CAB/IBE/getAirlineTailFin.xhtml?airlineCode=EK" alt="EK" class="mw50 mh35 mb-8">
-                                       <p class="fs-22"><strong>EK205</strong></p>
-                                       <!--  <p class="fs-20">Airbus A380-800</p>-->
-                                       <p class="fs-20">Airbus A380-800</p>
-                                       <p class="fs-20 ">
-                                          Economy Class
-                                       </p>
-                                    </div>
-                                    <div class="table-body-cell">
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p>Depart</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Arrive</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p>Duration</p>
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>09:45</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>19:00</strong></p>
-                                             <p class="fs-20">Thursday</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-30"><strong>17hrs</strong></p>
-                                             <!-- Hours -->
-                                             <p class="fs-20">15mins</p>
-                                             <!-- Mins -->
-                                          </div>
-                                       </div>
-                                       <div class="table-body-cell-inner">
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <div class="table-inner-content">
-                                             <p class="fs-22">3 Sep</p>
-                                          </div>
-                                          <!--  0 stops -->
-                                          <div id="stopOverDiv_5_2" class="table-inner-content fs-22">
-                                             <a href="#" onclick="stopOverDetails('#stopOverDiv_', event,'RE','DXB','JFK','EK205','2015/09/03','EK','5_2','searchByPriceResults');" data-accordion="flight-details" class="color-dark-gray accordion-white-border-cell small-exp_coll_icons" style="cursor: pointer;"> 
-                                             1 stop<i class="ir el icon-red-arrow"></i>
-                                             </a>
-                                          </div>
-                                          <!--     else 0 stops -->
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div id="stopOverDetails_5_2" class="flight-details" style="display: none; height: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;"> 
-                                 </div>
-                                 <!-- else more stops ends -->     
-                                 <!-- *********************UMRAH starts*********************** -->                                                                  
-                                 <!-- *********************UMRAH ends*********************** -->
-                                 <!-- *********************Any other message starts*********************** -->
-                              </div>
                               <!-- For Multi or any schedule search include class starts -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
@@ -1835,35 +1016,31 @@
                               <meta charset="utf-8">
                               <!-- *********************Any other message ends*********************** -->
                               <input type="hidden" name="flightSeqNo" value="0">
-                              <input type="hidden" name="flightOptionID" value="5">
+                              <input type="hidden" name="flightOptionID" value="1">
                               <input type="hidden" name="flightIDList" value="">					
                               <input type="hidden" name="segmentNumber" value="1">
                               <input type="hidden" name="multiLowestPriceFltWise" class="multiLowestPriceFltWise" value="">
                               <input type="hidden" name="optionTabFltWise" class="optionTabFltWise" value="">
                               <input type="hidden" name="sortTypeFltWise" class="sortTypeFltWise" value="">
-                              <input type="hidden" name="indexSel" class="indexSel" value="5">
-                              <input type="hidden" name="flightSelList" value="EK619_EK205">
+                              <input type="hidden" name="indexSel" class="indexSel" value="1">
+                              <input type="hidden" name="flightSelList" value="EK603_EK205">
                               <!-- Show the Branded Details only in case of Branded powershopper search -->
                               <!--?xml version="1.0" encoding="utf-8" ?-->
                               <meta charset="utf-8">
-                              <div id="compareAccordianDiv_5" class="select-fare mt-20 accordion-container">
-                                 <div id="compareRefDiv_5" class="select-fare-heading cf pb-16">
-                                    <p class="fl-left no-mg fs-28">Choose a fare</p>
-                                    <p class="fl-right no-mg fs-24 lh-42">
-                                       <a href="#" onclick="loadCompareFare(event, 5, 'searchByPriceResults', 'false'); return false;" class="color-dark-gray no-underline">Compare fares<i class="ir el icon-info"></i></a>
-                                    </p>
+                              <div id="compareAccordianDiv_1" class="select-fare mt-20 accordion-container">
+                                 <div id="compareRefDiv_1" class="select-fare-heading cf pb-16">
+                                    <p class="fl-left no-mg fs-28">Choose a stopover Emirati Package</p>
                                  </div>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEX-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex</h1>
-                                             <!--   <p class="fs-20">Earn 8,500 miles</p>-->
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Silver</h1>
                                              <p class="lowest-price-indicator">
                                                 <i class="ir el icon-tick"></i>Lowest price
                                              </p>
                                              <p class="fs-20">
-                                                Earn 4900 Miles
+                                                Metro tour without guide 
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -1871,7 +1048,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 67,184.00
+                                                      PKR 8,250.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -1883,14 +1060,14 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="m.dice-booking01.selectresults02.html" class="d-block">
+                                 <a href="m.dice-booking01.passengerdetails.html" class="d-block">
                                     <div class="select-fare-item FLEXPLUS-Y cf mb-16 ">
                                        <div class="select-fare-item-inner pl-16 pb-16 pt-16 pr-16 d-table">
                                           <div class="select-fare-inner-left d-table-cell w40">
-                                             <h1 class="fs-28 mt-0 mb-0">Flex Plus</h1>
+                                             <h1 class="fs-28 mt-0 mb-0">Emirati Package - Gold</h1>
                                              <!--   <p class="fs-20">Earn 8,500 miles</p>-->
                                              <p class="fs-20">
-                                                Earn 7000 Miles
+                                                Guided Metro tour, Burj Khalif The Top and Dubai Mall
                                              </p>
                                           </div>
                                           <div class="d-table-cell v-middle w33 fs-28">
@@ -1898,7 +1075,7 @@
                                                 <div class="d-table-cell color-dark-gray">
                                                    <p>
                                                       <strong>
-                                                      PKR 82,994.00
+                                                      PKR 13,994.00
                                                       </strong>
                                                    </p>
                                                 </div>
@@ -1935,9 +1112,7 @@
                   <input type="hidden" id="currentPageCount" value="1"/>							 	
                   <!--  Number of div's to show - each div (of configured number of options) will be shown on click of load more button -->
                   <input type="hidden" id="noPriceDiv" value="6"/>
-                  <div id="loadMoreBtn" class="flight-button cf mt-40 mb-64">
-                     <input id="accordion_1" type="submit" class="gray-button" onclick="loadMorePriceDetails(event);"  value='See more'>
-                  </div>
+                  
                </div>
             </div>
             <div class="footer pt-0">
