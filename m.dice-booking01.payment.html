@@ -46,6 +46,11 @@
       <title>Payment details | Manage your booking | Emirates UNITED ARAB EMIRATES</title>
       <meta name="Title" content="Payment details | Manage your booking | Emirates UNITED ARAB EMIRATES"/>
       <meta name="Description" content="All the tools and resources you need to make the most of your online booking and planning with Emirates airline - Emirates UNITED ARAB EMIRATES"/>
+	  <style>
+		#nobgspan{
+			background-image:url("https://mobile.emirates.com/basic/img/ff-steps-background-active.png") !important;
+		}
+	  </style>
    </head>
    <body onload="onPaymentPageLoad('true', '','', '', 'false', 'false', '', 'US,CA,IN','','US,CA,GB,IN' ); checkFiscalCodeLength();">
       <div class="page-loader"></div>
@@ -175,9 +180,9 @@
             </div>
             <div class="responsive-container top-pad-45">
                <div class="progress-bar-holder">
-                  <ul>
+				<ul>
                      <li class="active red mobile-view">
-                        <span class="mobile-view">Steps</span>
+                        <span id="nobgspan" class="mobile-view" style="background-image:none !important">Steps</span>
                         <i class="progress-bar-arrow"></i>
                      </li>
                      <li class="active red">
@@ -196,19 +201,23 @@
                         <span class="mobile-view">4</span>
                         <i class="progress-bar-arrow"></i>
                      </li>
-                     <li class="current-state">
+					 <li class="active gray">
                         <span class="mobile-view">5</span>
                         <i class="progress-bar-arrow"></i>
                      </li>
-                     <li>
+                     <li class="current-state">
                         <span class="mobile-view">6</span>
                         <i class="progress-bar-arrow"></i>
                      </li>
                      <li>
                         <span class="mobile-view">7</span>
+                        <i class="progress-bar-arrow"></i>
                      </li>
+                     <!--li>
+                        <span class="mobile-view">7</span>
+                     </li-->
                   </ul>
-               </div>
+				 </div>
                <!-- Error section -->
                <!-- Error section ends -->
                <div class="text-content">
