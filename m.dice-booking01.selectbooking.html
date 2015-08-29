@@ -11,15 +11,6 @@
       <title>Plan and book | Make a booking | Emirates UNITED ARAB EMIRATES</title>
       <meta name="Title" content="Plan and book | Make a booking | Emirates UNITED ARAB EMIRATES"/>
       <meta name="Description" content="All the tools and resources you need to make the most of your online booking and planning with Emirates airline - Emirates UNITED ARAB EMIRATES"/>
-      <!-- <script type="text/javascript">
-         var htmlTag = document.getElementsByTagName('html');
-         var loaderObj = document.createElement('div');
-         loaderObj.className = 'emirates-loader';
-         loaderObj.style.display = 'block';
-         
-          htmlTag[0].insertBefore(loaderObj,htmlTag[0].firstChild);
-         
-         </script> -->
       <meta name="HandheldFriendly" content="True" >
       <meta name="MobileOptimized" content="320">
       <meta name="viewport"
@@ -43,6 +34,11 @@
       <!-- ***************************************************************************************8 -->	
       <!-- Global Skyward variable for Analytics and contextual menu start by sofi -->
       <!-- Global Skyward variable for Analytics and contextual menu end by sofi-->
+      <style>
+         .emirates-loader{
+         display:none !important; 
+         }
+      </style>
    </head>
    <body onload="hideAddressbar();">
       <script>
@@ -305,6 +301,30 @@
                            </a>
                         </div>
                         <hr class="mt-32">
+                        <div class="book-checkbox-row chackbox-row cf mt-24">
+                           <input type="checkbox" id="FB_BookAFlight_stopover">
+                           <label for="FB_BookAFlight_stopover" class="chekbox-label cf" onClick="stopoverFade()">I would like to Stopover in Dubai</label>
+                           <input type="hidden" id="stopover" name="flexiDate" class="flexiDate"/>
+                        </div>
+                        <div style="display:none;" id="totalStopoverHoursDiv" class="column-container passengers-inputs cf top-margin-30px" data-slidedown-item="" data-number-control-container="" data-number-control-min="4" data-number-control-increment="[nc-inc]" data-number-control-decrement="[nc-dec]" data-number-control-incrementby="1" data-number-control-decrementby="1" data-number-control-start="1">
+                           <label for="stopoverhours-input">Preferred Stopover Duration<span>(Hours 4+)</span></label>
+                           <div class="number-input-container">
+                              <a href="#" nc-inc="" id="returnStopoverHoursP">+</a>
+                              <span class="number-field" data-number-field="">1</span>
+                              <input type="hidden" id="totalAdultsReturn" name="totalAdults" value="1" onchange="changeAdultCount('#totalAdultsReturn','#totalChildrenReturn','#totalInfantsReturn','0');flexiConditionCheck()">
+                              <a href="#" nc-dec="" id="returnAdultM" class="disabled">-</a>
+                           </div>
+                        </div>
+                        <script>
+                           function stopoverFade() {
+                           
+                           if ($('#totalStopoverHoursDiv').is(":hidden")) {
+                           $('#totalStopoverHoursDiv').fadeIn();
+                           return;
+                           }
+                           $('#totalStopoverHoursDiv').fadeOut();
+                           }
+                        </script>
                         <input type="hidden" name="searchType" id="searchTypeReturn" class="searchType" value="RE"/>	
                         <input type="hidden" name="bookingType"  id="bookingTypeReturn" class="bookingType" />
                         <input type="hidden" name="originInterlineFlag"  id="isOriginInterline_return" class="isOriginInterline" />
@@ -653,9 +673,6 @@
       window.jQuery|| document.write('<script src="https://mobile.emirates.com/basic/js/vendor/jquery-1.10.2.min.js'+a+'"><\/script>');
    </script>
    <script src="https://mobile.emirates.com/basic/js/vendor/jquery.mobile.custom.min.js?v=40"></script>
-   <!-- <script>var loader = '<div class="emirates-loader" style="display: block;"></div>';
-      $('html').prepend(loader);
-      </script> -->
    <link rel="stylesheet"
       href="https://mobile.emirates.com/basic/js/vendor/jquery.mobile-1.3.2.css?v=40">
    <script type="text/javascript">
@@ -741,4 +758,4 @@
    </script>	
    <script type="text/javascript"></script>
    <script tppe="text/javascript"></script>
-</html>	
+</html>
